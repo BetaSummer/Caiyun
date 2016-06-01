@@ -1,0 +1,17 @@
+{
+  "name": "caiyun",
+  "version": "1.0.0",
+  "description": "当时明月在，曾照彩云归。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "betahouse",
+    "ahing"
+  ],
+  "author": "ahbing",
+  "license": "ISC"
+}
