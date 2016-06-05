@@ -2,7 +2,6 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const proxy = require('./server/webpack-dev-proxy');
 
 function getEntrySources(sources) {
   if (process.env.NODE_ENV !== 'production') {
@@ -50,9 +49,6 @@ const localIdentName=  '('+ process.env.NODE_ENV === 'development' ? '[name]__[l
 module.exports = {
   entry: getEntrySources(['./src/index.js']),
   vendor: [
-    'es5-shim',
-    'es6-shim',
-    'es6-promise',
     'react',
   ],
   output: {
@@ -64,7 +60,6 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: { index: '/' },
-    proxy: proxy(),
   },
   module: {
     preLoaders: [
