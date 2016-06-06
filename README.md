@@ -1,5 +1,6 @@
 Caiyun
 =================================
+![travis-ci](https://travis-ci.org/BetaSummer/Caiyun.svg)
 
 当时明月在，曾照`彩云`归。
 
