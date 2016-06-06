@@ -1,7 +1,7 @@
 import React from 'react';
 // import styles from './index.scss';
 
-function Footer({}) {
+function Footer({}){
   return (
     <footer>
     footer
