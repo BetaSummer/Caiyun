@@ -1,12 +1,17 @@
 import React from 'react';
 
+import Button from '../components/button';
+
 class Index extends React.Component {
   constructor(props) {
     super(props);
   }
   render() {
     return (
-      <p>index</p>
+      <div>
+        <Button/>
+        <p>index</p>
+      </div>
     );
   }
 }

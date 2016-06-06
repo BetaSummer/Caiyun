@@ -1,0 +1,11 @@
+@import "../../index.scss";
+
+// @include button 更具不同的类来显示不同组件样式
+:local(.button) {
+  &.error {
+    background: $red;
+  }
+  &.normal {
+    background: $blue;
+  }
+}

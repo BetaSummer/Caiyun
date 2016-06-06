@@ -1,5 +1,8 @@
 import React from 'react';
 import {connect} from 'react-redux';
+
+import '../index.scss';
+
 // import some Components
 import Header from '../components/header';
 import Footer from '../components/footer';
