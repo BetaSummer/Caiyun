@@ -21,12 +21,10 @@ render(<div>
     <Router history={history}>
       <Route path="/" component={App}>
         <IndexRoute component={Index}/>
-        <Route path="family" component={Family}>
-        </Route>
-        <Route path="person/:id" component={Person}>
-        </Route>
+        <Route path="family" component={Family}/>
+        <Route path="person/:id" component={Person}/>
       </Route>
     </Router>
   </Provider>
   <DevTools store={ store }/>
-</div>,document.getElementById('root'))
+</div>, document.getElementById('root'));

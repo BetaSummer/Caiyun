@@ -1,7 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 function getEntrySources(sources) {
   if (process.env.NODE_ENV !== 'production') {
@@ -19,13 +19,13 @@ const basePlugins = [
   }),
   new HtmlWebpackPlugin({
     template: './src/index.html',
-    inject: 'body'
+    inject: 'body',
   }),
   new ExtractTextPlugin('style.css', { allChunks: true }),
 ];
 
 const devPlugins = [
-  new webpack.NoErrorsPlugin()
+  new webpack.NoErrorsPlugin(),
 ];
 
 const prodPlugins = [
@@ -44,7 +44,7 @@ const plugins = basePlugins
 // css local
 // https://medium.com/seek-ui-engineering/the-end-of-global-css-90d2a4a06284#.c2jl6jmb8
 // and https://github.com/camsong/blog/issues/5
-const localIdentName=  '('+ process.env.NODE_ENV === 'development' ? '[name]__[local]___[hash:base64:5]' : '[hash:base64:5]' +')';
+const localIdentName = '(' + process.env.NODE_ENV === 'development' ? '[name]__[local]___[hash:base64:5]' : '[hash:base64:5]' + ')';
 
 module.exports = {
   entry: getEntrySources(['./src/index.js']),
@@ -64,20 +64,20 @@ module.exports = {
   module: {
     preLoaders: [
      { test: /\.js$/, loader: 'source-map-loader' },
-     // { test: /\.js$/, loader: 'eslint-loader' },
+     { test: /\.js$/, loader: 'eslint-loader', exclude: /node_modules/ },
     ],
     loaders: [
-      { test: /\.scss$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader?modules&importLoaders=1&localIdentName='+localIdentName+'!sass-loader') },
-      //{ test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader?modules&importLoaders=1&localIdentName='+localIdentName) },
+      { test: /\.scss$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader?modules&importLoaders=1&localIdentName=' + localIdentName + '!sass-loader')},
+      // { test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader?modules&importLoaders=1&localIdentName='+localIdentName) },
       { test: /\.json$/, loader: 'json-loader' },
       { test: /\.jsx?$/, loader: 'babel', include: path.join(__dirname, 'src'), exclude: /node_modules/},
       { test: /\.(png|jpg|jpeg|gif|svg)$/, loader: 'url-loader?prefix=img/&limit=5000' },
       { test: /\.(woff|woff2|ttf|eot)$/, loader: 'url-loader?prefix=font/&limit=5000' },
-    ]
+    ],
   },
   devtool: 'source-map',
   plugins: plugins,
   resolve: {
-    extensions: ['', '.js', '.json', '.jsx']
-  }
+    extensions: ['', '.js', '.json', '.jsx'],
+  },
 };

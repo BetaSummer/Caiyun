@@ -3,5 +3,5 @@ import logger from './logger';
 
 export default [
   thunk,
-  logger
+  logger,
 ];

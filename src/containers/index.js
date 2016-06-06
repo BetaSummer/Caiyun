@@ -1,13 +1,13 @@
 import React from 'react';
 
-class Index extends React.Component{
+class Index extends React.Component {
   constructor(props) {
     super(props);
   }
   render() {
-    return(
+    return (
       <p>index</p>
-    )
+    );
   }
 }
 

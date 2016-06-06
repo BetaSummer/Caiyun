@@ -5,8 +5,8 @@ import {routerReducer} from 'react-router-redux';
 
 // key in combineReducers object is same as the key in state;
 const rootReducer = combineReducers({
-  //combine some splited reducers
-  routing: routerReducer
+  // combine some splited reducers
+  routing: routerReducer,
 });
 
 export default rootReducer;

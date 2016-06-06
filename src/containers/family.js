@@ -1,13 +1,13 @@
 import React from 'react';
 
-class Family extends React.Component{
+class Family extends React.Component {
   constructor(props) {
     super(props);
   }
   render() {
-    return(
+    return (
       <p>Family</p>
-    )
+    );
   }
 }
 

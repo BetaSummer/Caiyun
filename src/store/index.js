@@ -1,6 +1,6 @@
 import {createStore, applyMiddleware, compose} from 'redux';
 
-import {devTools, persistState} from 'redux-devtools';
+import {persistState} from 'redux-devtools';
 
 import middleware from './middleware';
 import rootReducer from '../reducers/';
@@ -22,7 +22,7 @@ if (__DEV__) {
 
 function getDebugSessionKey() {
   const matches = window.location.href.match(/[?&]debug_session=([^&]+)\b/);
-  return (matches && matches.length > 0)? matches[1] : null;
+  return (matches && matches.length > 0) ? matches[1] : null;
 }
 
 export const store = finalCreateStore(rootReducer);

@@ -1,13 +1,13 @@
 import React from 'react';
 
-class Person extends React.Component{
+class Person extends React.Component {
   constructor(props) {
     super(props);
   }
   render() {
-    return(
+    return (
       <p>Person</p>
-    )
+    );
   }
 }
 
