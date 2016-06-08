@@ -4,11 +4,13 @@
   "description": "当时明月在，曾照彩云归。",
   "main": "index.js",
   "scripts": {
-    "build": "rm -r dist/* && cp src/index.html dist &&cross-env NODE_ENV=production webpack -p --config webpack.config.js",
+    "build": "rm -r dist/* && cp src/index.html dist/ &&cross-env NODE_ENV=production webpack -p --config webpack.config.js",
     "dev": "cross-env NODE_ENV=development webpack-dev-server -d --inline --hot --progress --no-info",
     "lint": "eslint .",
     "start": "cross-env NODE_ENV=production node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build && echo \"2016.betahouse.us\" > dist/CNAME ",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [
     "react",
@@ -16,8 +18,12 @@
     "betahouse",
     "ahing"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BetaSummer/Caiyun.git"
+  },
   "author": "ahbing",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.9.1",
     "babel-eslint": "^6.0.4",
@@ -31,6 +37,7 @@
     "eslint-plugin-react": "^5.1.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
+    "gh-pages": "^0.11.0",
     "html-webpack-plugin": "^2.19.0",
     "json-loader": "^0.5.4",
     "node-sass": "^3.7.0",
