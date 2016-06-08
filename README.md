@@ -4,14 +4,12 @@ Caiyun
 
 当时明月在，曾照`彩云`归。
 
-## Install
+### Install
 
 ```bash
 $ git clone https://github.com/BetaSummer/Caiyun.git
 $ cd Caiyun && npm install
 ```
-
-## Npm Scripts
 
 ### Develop
 
