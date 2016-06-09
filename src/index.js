@@ -4,13 +4,15 @@ import {Provider} from 'react-redux';
 import { syncHistoryWithStore } from 'react-router-redux';
 import { Router, browserHistory, IndexRoute, Route } from 'react-router';
 
-import App from './containers/app';
-import Index from './containers/index';
-import Family from './containers/family';
-import Person from './containers/person';
+import App from './pages/app';
+import Index from './pages/index';
+import Team from './pages/team';
+import About from './pages/about';
+import Blog from './pages/blog';
+import Person from './pages/person';
 
 // Redux devTool
-import DevTools from './devTools';
+// import DevTools from './devTools';
 
 import {store} from './store/';
 
@@ -21,10 +23,12 @@ render(<div>
     <Router history={history}>
       <Route path="/" component={App}>
         <IndexRoute component={Index}/>
-        <Route path="family" component={Family}/>
+        <Route path="about" component={About}/>
+        <Route path="blog" component={Blog}/>
+        <Route path="team" component={Team}/>
         <Route path="person/:id" component={Person}/>
       </Route>
     </Router>
   </Provider>
-  <DevTools store={ store }/>
+  {/* <DevTools store={ store }/> */}
 </div>, document.getElementById('root'));

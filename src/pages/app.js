@@ -1,8 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
 
-import '../index.scss';
-
 // import some Components
 import Header from '../components/header';
 import Footer from '../components/footer';
@@ -24,13 +22,15 @@ class App extends React.Component {
 
   render() {
     // get some props from mapStateToProps
+    const navs = ['about', 'team', 'blog'];
+    const curTab = 'team';
     return (
       <div>
-        <Header/>
+        <Header navs={navs} curTab={curTab}/>
         {/* some component like Header */}
         {this.props.children}
         {/* some component like Footer */}
-        <Footer/>
+        <Footer navs={navs}/>
       </div>
     );
   }

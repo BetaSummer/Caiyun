@@ -1,14 +1,14 @@
 import React from 'react';
 
-class Family extends React.Component {
+class Blog extends React.Component {
   constructor(props) {
     super(props);
   }
   render() {
     return (
-      <p>Family</p>
+      <p>Blog</p>
     );
   }
 }
 
-export default Family;
+export default Blog;

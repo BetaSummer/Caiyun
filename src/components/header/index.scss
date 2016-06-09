@@ -1,3 +1,48 @@
-// import global scss
+@import "../../index.scss";
+:local(.header) {
+  $height: 100px;
+  $mHeight: 60px;
+  @include breakPoint(mobile) {
+    line-height: $mHeight;
+  };
+  box-sizing: border-box;
+  width: 100%;
+  height: $height;
+  line-height: $height;
+  overflow: hidden;
+}
+:local(.logo) {
+  float: left;
+  height: inherit;
+  padding-left: 80px;
+  @include breakPoint(mobile) {
+    padding-left: 10px;
+  }
+  img {
+    height: 100%;
+  }
+}
 
-// local scss
+:local(.nav) {
+  float: right;
+  height: inherit;
+  padding-right: 80px;
+  line-height: inherit;
+  @include breakPoint(mobile) {
+    display: none;
+  };
+  li {
+    display: inline-block;
+    margin-right: 30px;
+    width: auto;
+    a {
+      padding: 6px 0;
+      &:hover,
+      &.curTab {
+        border-bottom: 2px solid $red;
+        color: $black;
+      }
+    }
+  }
+
+}

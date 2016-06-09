@@ -1,10 +1,10 @@
 {
   "name": "caiyun",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "当时明月在，曾照彩云归。",
   "main": "index.js",
   "scripts": {
-    "build": "rm -r dist/* && cp src/index.html dist/ &&cross-env NODE_ENV=production webpack -p --config webpack.config.js",
+    "build": "mkdir dist && rm -r dist/* && cp src/index.html dist/ && cross-env NODE_ENV=production webpack -p --config webpack.config.js",
     "dev": "cross-env NODE_ENV=development webpack-dev-server -d --inline --hot --progress --no-info",
     "lint": "eslint .",
     "start": "cross-env NODE_ENV=production node server.js",

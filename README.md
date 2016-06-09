@@ -39,3 +39,10 @@ $ npm run lint
 ```bash
 $ npm run test
 ```
+
+### Deploy
+
+```bash
+$ npm run predeploy
+$ npm run deploy
+```
