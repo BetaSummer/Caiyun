@@ -17,6 +17,20 @@ body {
     @include font-size($normal)
   };
 }
+h1 {
+  @include font-size($huge + 1);
+  @include breakPoint(tablet) {
+    @include font-size($gigantic + 1);
+  }
+}
+
+h2 {
+  @include font-size($large + 1);
+  @include breakPoint(tablet) {
+    @include font-size($huge + 1);
+  }
+}
+
 ul {
   padding: 0;
   margin: 0;

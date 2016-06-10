@@ -1,0 +1,83 @@
+@import "../../index.scss";
+
+:local(.wrapper) {
+  width: 100%;
+  min-height: 400px;
+  section {
+    margin-bottom: 40px;
+  }
+}
+
+:local(.section1) {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  left: 0;
+  top: 0;
+  img {
+    @include center();
+    top: -10px;
+    width: 50%;
+    height: auto;
+  }
+}
+
+:local(.indexTitle) {
+  @include center();
+  top: -10px;
+  width: 100%;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  color: $light;
+}
+
+:local(.introBox) {
+  position: relative;
+  width: 100%;
+  height: 520px;
+  overflow: hidden;
+}
+
+:local(.introItem) {
+  position: relative;
+  float: left;
+  width: 47%;
+  margin-left: 2%;
+  height: inherit;
+  img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+:local(.intro) {
+  @include center();
+  width: 100%;
+  height: inherit;
+  text-align: center;
+  color: $light;
+  transition: all .6s ease;
+  background: rgba(0, 0, 0, .3);
+  &:hover {
+    background: rgba(0, 0, 0, .6);
+  }
+}
+
+:local(.content) {
+  @include center();
+  width: 60%;
+  height: 60%;
+  text-align: center;
+  color: $light;
+  p {
+    box-sizing: border-box;
+    padding: 0 2rem;
+    text-align: left;
+  }
+  &:hover {
+    border: none;
+  }
+}

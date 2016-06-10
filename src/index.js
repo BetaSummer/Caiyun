@@ -4,12 +4,12 @@ import {Provider} from 'react-redux';
 import { syncHistoryWithStore } from 'react-router-redux';
 import { Router, browserHistory, IndexRoute, Route } from 'react-router';
 
-import App from './pages/app';
-import Index from './pages/index';
-import Team from './pages/team';
-import About from './pages/about';
-import Blog from './pages/blog';
-import Person from './pages/person';
+import App from './containers/app';
+import Index from './pages/index/';
+import Team from './pages/team/';
+import About from './pages/about/';
+import Blog from './pages/blog/';
+import Person from './pages/person/';
 
 // Redux devTool
 // import DevTools from './devTools';
