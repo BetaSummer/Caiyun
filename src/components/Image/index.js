@@ -8,7 +8,6 @@ const cx = classNames.bind(styles);
 function Image({imgSrc}) {
   let classNameForImage = cx({
     base: true,
-    show: imgSrc,
   });
   return (
     <img src={imgSrc} className={classNameForImage}/>

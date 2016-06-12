@@ -1,0 +1,67 @@
+@import "../../index.scss";
+
+:local(.team) {
+  width: 100%;
+  h1,
+  p {
+    width: 100%;
+    text-align: center;
+  }
+  p {
+    @include font-size($large);
+    margin-bottom: 6%;
+  }
+}
+
+:local(.item) {
+  position: relative;
+  width: 32%;
+  margin-left: 1%;
+  height:100%;
+  float: left;
+  margin-bottom: 18px;
+  &:hover .intro {
+    display: block;
+  }
+}
+
+:local(.intro) {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .4);
+  color: $light;
+  text-align: center;
+  div {
+    position: absolute;
+    right: 4%;
+    top: 3%;
+    width: 14%;
+    height: 14%;
+    text-align: center;
+    /* todo 内容垂直居中？ */
+  }
+  h2 {
+    margin-top: 72%;
+    @include breakPoint(tablet) {
+      margin-top: 36%;
+    }
+  }
+
+  p,span {
+    display: none;
+    @include breakPoint(tablet) {
+      display: block;
+    }
+  }
+  @include breakPoint(tablet) {
+    display: none;
+  }
+}
+
+:local(.fixed_intro) {
+  display: none;
+}

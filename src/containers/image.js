@@ -1,6 +1,6 @@
 // container for Image component
 import React from 'react';
-import Image from '../components/Image/';
+import Image from '../components/image/';
 
 class ImageContainer extends React.Component {
   constructor(props) {
