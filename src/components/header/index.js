@@ -6,7 +6,7 @@ import {Link} from 'react-router';
 
 const cx = classNames.bind(styles);
 
-function Header({navs, curTab}) {
+function Header({tabs, curTab}) {
   let classNameForHeader = cx({
     header: true,
   });
@@ -17,11 +17,15 @@ function Header({navs, curTab}) {
     nav: true,
   });
 
-  let navList = navs.map((item, index) => {
+  let navList = tabs.map((item, index) => {
+    const tabName = item.tabName;
     let classNameForCurTab = cx({
-      curTab: curTab === item,
+      curTab: curTab === tabName,
     });
-    return <li key={index}><Link className={classNameForCurTab} to={item}>{item.toUpperCase()}</Link></li>;
+    if (item.isLink) {
+      return <li key={index}><a className={classNameForCurTab} href={item.href}>{tabName.toUpperCase()}</a></li>;
+    }
+    return <li key={index}><Link className={classNameForCurTab} to={tabName}>{tabName.toUpperCase()}</Link></li>;
   });
   return (
     <header className={classNameForHeader}>
@@ -40,7 +44,7 @@ function Header({navs, curTab}) {
 }
 
 Header.propTypes = {
-  navs: PropTypes.array.isRequired,
+  tabs: PropTypes.array.isRequired,
   curTab: PropTypes.string.isRequired,
 };
 export default Header;

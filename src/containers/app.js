@@ -10,6 +10,7 @@ import Footer from '../components/footer';
 class App extends React.Component {
   static propTypes = {
     children: React.PropTypes.object,
+    tab: React.PropTypes.object,
   }
 
   constructor(props) {
@@ -17,20 +18,22 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    // dispatch some action to get data or somethings
+    // handle dom
   }
 
   render() {
     // get some props from mapStateToProps
-    const navs = ['about', 'team', 'blog'];
-    const curTab = 'team';
+    const {tab} = this.props;
+    const curTab = tab.curTab;
+    const headerTabs = tab.headerTabs;
+    const footerTabs = tab.footerTabs;
     return (
       <div>
-        <Header navs={navs} curTab={curTab}/>
+        <Header tabs={headerTabs} curTab={curTab}/>
         {/* some component like Header */}
         {this.props.children}
         {/* some component like Footer */}
-        <Footer navs={navs}/>
+        <Footer tabs={footerTabs}/>
       </div>
     );
   }

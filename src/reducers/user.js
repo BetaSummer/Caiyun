@@ -13,7 +13,7 @@ const INITIAL_STATE = {
   company: 'upyun',
 };
 
-function User(state = INITIAL_STATE, action) {
+function user(state = INITIAL_STATE, action) {
   switch (action.type) {
   case ActionTypes.REQUEST_USER:
     return Object.assign({}, state, {
@@ -29,4 +29,4 @@ function User(state = INITIAL_STATE, action) {
   }
 }
 
-export {User};
+export default user;

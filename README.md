@@ -9,6 +9,7 @@ Caiyun
 ```bash
 $ git clone https://github.com/BetaSummer/Caiyun.git
 $ cd Caiyun && npm install
+$ mkdir dist
 ```
 
 ### Develop

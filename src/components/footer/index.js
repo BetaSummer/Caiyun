@@ -5,11 +5,15 @@ import classNames from 'classNames/bind';
 
 const cx = classNames.bind(styles);
 
-function Footer({navs}) {
-  let nowYear = (new Date()).getFullYear();
+function Footer({tabs}) {
+  const nowYear = (new Date()).getFullYear();
   // click go to top
-  let navList = navs.map((item, index) => {
-    return <li key={index}><Link to={item}>{item.toUpperCase()}</Link></li>;
+  const navList = tabs.map((item, index) => {
+    const tabName = item.tabName;
+    if (item.isLink) {
+      return <li key={index}><a target="_blank" href={item.href}>{tabName.toUpperCase()}</a></li>;
+    }
+    return <li key={index}><Link to={tabName}>{tabName.toUpperCase()}</Link></li>;
   });
   let classNameForFooter = cx({
     footer: true,
@@ -39,7 +43,7 @@ function Footer({navs}) {
 }
 
 Footer.propTypes = {
-  navs: PropTypes.array.isRequired,
+  tabs: PropTypes.array.isRequired,
 };
 
 export default Footer;

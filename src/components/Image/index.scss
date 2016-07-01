@@ -1,5 +1,8 @@
 @import "../../index.scss";
+
 :local(.base) {
   width: 100%;
   height: 100%;
+  max-width: 100%;
+  object-fit: cover;
 }

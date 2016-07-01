@@ -1,0 +1,18 @@
+@import "../../index.scss";
+
+:local(.about) {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 20px 30px;
+  h1 {
+    text-align: center;
+  }
+  p {
+    max-width: 80%;
+    margin-left: 10%;
+    font-size: 1.6em;
+    text-indent: 1.6em;
+    line-height: 1.2;
+    word-break: break-all;
+  }
+}

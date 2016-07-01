@@ -23,6 +23,7 @@ render(<div>
     <Router history={history}>
       <Route path="/" component={App}>
         <IndexRoute component={Index}/>
+        <Route path="home" component={Index}/>
         <Route path="about" component={About}/>
         <Route path="blog" component={Blog}/>
         <Route path="team" component={Team}/>

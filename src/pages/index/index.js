@@ -10,11 +10,11 @@ class Index extends React.Component {
   }
 
   render() {
+    let indexTitle = 'Hello darkness my old friend';
     return (
       <div className={styles.wrapper}>
         <section className={styles.section1}>
-          <ImageContainer />
-          <h1 className={styles.indexTitle}>Hello darkness my old friend</h1>
+          <h1 className={styles.indexTitle}>{indexTitle}</h1>
         </section>
         <section className={styles.introBox}>
           <a href="http://ahbing.me" className={styles.introItem}>
@@ -22,6 +22,7 @@ class Index extends React.Component {
             <div className={styles.intro}>
               <div className={styles.content}>
                 <h1>hello world</h1>
+                <p>say something</p>
               </div>
             </div>
           </a>
@@ -30,6 +31,7 @@ class Index extends React.Component {
             <div className={styles.intro}>
               <div className={styles.content}>
                 <h1>hello world</h1>
+                <p>say something</p>
               </div>
             </div>
           </a>
