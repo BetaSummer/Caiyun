@@ -1,0 +1,45 @@
+@import "../../index.scss";
+
+:local(.person) {
+  position: fixed;
+  padding: 0;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-y: scroll;
+  // @include animation to fade in/out
+}
+
+:local(.closeBtn) {
+  width: 4rem;
+  height: 4rem;
+  background: rgba(0, 0, 0, .2);
+  color: $line;
+  position: fixed;
+  right: 6rem;
+  top: 2rem;
+  z-index: 23333;
+  display: table;
+  &:hover {
+    background: $light;
+  }
+  a {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    @include font-size($large);
+  }
+}
+
+:local(.info) {
+  width: 100%;
+  > h1 {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+:local(.infoDetail) {
+}

@@ -2,26 +2,41 @@
 
 :local(.team) {
   width: 100%;
-  h1,
-  p {
+  >h1,
+  >p {
     width: 100%;
     text-align: center;
   }
-  p {
+  >p {
     @include font-size($large);
     margin-bottom: 6%;
+    @include breakPoint(mobile) {
+      width: 92%;
+      margin-left: 4%;
+      @include font-size($larger);
+    };
   }
 }
 
 :local(.item) {
   position: relative;
-  width: 32%;
+  width: calc(96% / 3);
   margin-left: 1%;
   height:100%;
   float: left;
-  margin-bottom: 18px;
+  margin-bottom: 1.8rem;
   &:hover .intro {
     display: block;
+  }
+  @include breakPoint(mobile) {
+    float: none;
+    margin-bottom: 1rem;
+    width: calc(100vw - 2%);
+    height: calc(100vw - 2%);
+  }
+  @include breakPoint(desktop) {
+    margin-bottom: 3.2rem;
+    width: calc(95% / 4);
   }
 }
 

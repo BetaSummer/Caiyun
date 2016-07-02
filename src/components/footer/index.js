@@ -17,6 +17,7 @@ function Footer({tabs}) {
   });
   let classNameForFooter = cx({
     footer: true,
+    hide: true,
   });
   let classNameForLeft = cx({
     left: true,
@@ -35,7 +36,7 @@ function Footer({tabs}) {
         </ul>
         <div>
           <p>Copyright &copy; 2012-{nowYear} betahouse.us</p>
-          <p>Create with <em>♥</em> by <a target="_blank" href="http://ahbing.me">ahbing</a></p>
+          <p>Create with <em>♥</em> by <a target="_blank" href="http://weibo.com/u/5622195893/">ahbing</a> • <a target="_blank" href="https://github.com/BetaSummer/Caiyun">彩云</a></p>
         </div>
       </div>
     </footer>

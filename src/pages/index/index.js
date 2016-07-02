@@ -17,7 +17,7 @@ class Index extends React.Component {
           <h1 className={styles.indexTitle}>{indexTitle}</h1>
         </section>
         <section className={styles.introBox}>
-          <a href="http://ahbing.me" className={styles.introItem}>
+          <a href="http://google.com" className={styles.introItem}>
             <ImageContainer/>
             <div className={styles.intro}>
               <div className={styles.content}>
@@ -26,7 +26,7 @@ class Index extends React.Component {
               </div>
             </div>
           </a>
-          <a href="http://ahbing.me" className={styles.introItem}>
+          <a href="http://google.com" className={styles.introItem}>
             <ImageContainer/>
             <div className={styles.intro}>
               <div className={styles.content}>

@@ -1,1 +1,54 @@
 @import "../../index.scss";
+
+:local(.user) {
+  width: 78rem;
+  height: 80vh;
+  @include center();
+  margin-bottom: 10rem;
+  img {
+    max-width: 100%;
+  }
+}
+
+:local(.image) {
+  width: 100%;
+  height: 60%;
+  overflow: hidden;
+  img {
+    max-width: 100%;
+    max-width: 100%;
+  }
+}
+
+:local(.info) {
+  padding: 0 0 6rem 0;
+}
+
+:local(.infoDetail) {
+  width: 100%;
+  border-top: 2px solid #000;
+  min-height: 10rem;
+  display: flex;
+  >div,
+  >ul {
+    // display: inline-block;
+    display: flex;
+    padding:0 4rem;
+    height: inherit;
+  }
+  >ul {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-right: 2px solid #000;
+    li {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+  >div p{
+    line-height: 1.2;
+    overflow-wrap: break-word;
+    flex-wrap: wrap-reverse;
+  }
+}

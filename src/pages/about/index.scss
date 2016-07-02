@@ -3,16 +3,23 @@
 :local(.about) {
   width: 100%;
   box-sizing: border-box;
-  padding: 10px 20px 30px;
+  padding: 1rem 2rem 3rem;
   h1 {
     text-align: center;
   }
   p {
-    max-width: 80%;
-    margin-left: 10%;
-    font-size: 1.6em;
-    text-indent: 1.6em;
+    max-width: 60%;
+    margin-left: 20%;
+    text-indent: 2rem;
     line-height: 1.2;
     word-break: break-all;
+    text-indent: ($normal + 2);
+    @include breakPoint(mobile) {
+      max-width: 90%;
+      margin-left: 5%;
+    };
+    @include breakPoint(desktop) {
+      text-indent: ($larger);
+    }
   }
 }

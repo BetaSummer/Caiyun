@@ -44,7 +44,7 @@ const plugins = basePlugins
 // css local
 // https://medium.com/seek-ui-engineering/the-end-of-global-css-90d2a4a06284#.c2jl6jmb8
 // and https://github.com/camsong/blog/issues/5
-const localIdentName = '(' + process.env.NODE_ENV === 'development' ? '[name]__[local]___[hash:base64:5]' : '[hash:base64:5]' + ')';
+const localIdentName = process.env.NODE_ENV === 'development' ? '[path]___[name]__[local]-[hash:base64:5]' : '[hash:base64:5]';
 
 module.exports = {
   entry: getEntrySources(['./src/index.js']),

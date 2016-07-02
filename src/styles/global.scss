@@ -2,6 +2,8 @@
 $font: 'Proxima Nova', Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
 
 html {
+  // 浏览器默认 font-size 是 16px
+  // 将 root font-size 设置成 10px 是为了方便使用 rem 单位的计算
   font-size: 62.5%;
 }
 
@@ -10,24 +12,27 @@ body {
   font-weight: $normal;
   position: relative;
   box-sizing: border-box;
+  @include font-size($normal);
   letter-spacing: .5px;
-  @include font-size($small);
   -webkit-font-smoothing: antialiased;
-  @include breakPoint(tablet) {
-    @include font-size($normal)
-  };
 }
 h1 {
   @include font-size($huge + 1);
-  @include breakPoint(tablet) {
+  @include breakPoint(desktop) {
     @include font-size($gigantic + 1);
   }
 }
 
 h2 {
   @include font-size($large + 1);
-  @include breakPoint(tablet) {
+  @include breakPoint(desktop) {
     @include font-size($huge + 1);
+  }
+}
+p {
+  @include font-size($normal+2);
+  @include breakPoint(desktop) {
+    @include font-size($larger);
   }
 }
 

@@ -14,7 +14,7 @@ export function receviceUser(json) {
   };
 }
 
-export funciton selectTab(tab) {
+export function selectTab(tab) {
   return {
     type: ActionTypes.SELECT_TAB,
     curTab: tab,

@@ -1,43 +1,45 @@
 @import "../../index.scss";
 :local(.header) {
-  $height: 100px;
-  $mHeight: 60px;
-  @include breakPoint(mobile) {
-    line-height: $mHeight;
-  };
+  $headerHeight: 10rem;
+  $mHeaderHeight: 6rem;
   box-sizing: border-box;
   width: 100%;
-  height: $height;
-  line-height: $height;
+  height: $headerHeight;
+  line-height: $headerHeight;
+  @include breakPoint(mobile) {
+    height: $mHeaderHeight;
+    line-height: $mHeaderHeight;
+  };
   overflow: hidden;
 }
 :local(.logo) {
   float: left;
   height: inherit;
-  padding-left: 80px;
+  padding-left: 8rem;
   @include breakPoint(mobile) {
-    padding-left: 10px;
+    padding-left: 1rem;
   }
   img {
-    height: 100%;
+    max-height: 100%;
   }
 }
 
 :local(.nav) {
   float: right;
   height: inherit;
-  padding-right: 80px;
+  padding-right: 8rem;
   line-height: inherit;
   @include breakPoint(mobile) {
     display: none;
   };
   li {
     display: inline-block;
-    margin-right: 30px;
+    margin-right: 3rem;
     width: auto;
     a {
       padding: 6px 0;
       &:hover,
+      &:active,
       &.curTab {
         border-bottom: 2px solid $red;
         color: $black;

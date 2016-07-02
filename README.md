@@ -9,7 +9,6 @@ Caiyun
 ```bash
 $ git clone https://github.com/BetaSummer/Caiyun.git
 $ cd Caiyun && npm install
-$ mkdir dist
 ```
 
 ### Develop
@@ -24,6 +23,7 @@ Open `http://localhost:8080` in your browser.
 ### Production
 
 ```bash
+$ mkdir dist // for the first time
 $ npm run build
 $ npm start
 ```

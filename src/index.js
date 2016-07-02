@@ -26,8 +26,9 @@ render(<div>
         <Route path="home" component={Index}/>
         <Route path="about" component={About}/>
         <Route path="blog" component={Blog}/>
-        <Route path="team" component={Team}/>
-        <Route path="person/:id" component={Person}/>
+        <Route path="team" component={Team}>
+          <Route path=":id" component={Person}/>
+        </Route>
       </Route>
     </Router>
   </Provider>
