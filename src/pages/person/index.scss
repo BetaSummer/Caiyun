@@ -15,15 +15,20 @@
 :local(.closeBtn) {
   width: 4rem;
   height: 4rem;
-  background: rgba(0, 0, 0, .2);
-  color: $line;
+  background: #fff;
+  color: #000;
+  border: 2px solid #000;
   position: fixed;
   right: 6rem;
   top: 2rem;
   z-index: 23333;
   display: table;
+  @include breakPoint(mobile) {
+    right: 2%;
+  };
   &:hover {
-    background: $light;
+    background: #fff;
+    border-color: $red;
   }
   a {
     display: table-cell;
@@ -31,15 +36,4 @@
     text-align: center;
     @include font-size($large);
   }
-}
-
-:local(.info) {
-  width: 100%;
-  > h1 {
-    width: 100%;
-    text-align: left;
-  }
-}
-
-:local(.infoDetail) {
 }
