@@ -12,7 +12,7 @@ import Blog from './pages/blog/';
 import Person from './pages/person/';
 
 // Redux devTool
-// import DevTools from './devTools';
+import DevTools from './devTools';
 
 import {store} from './store/';
 
@@ -32,5 +32,5 @@ render(<div>
       </Route>
     </Router>
   </Provider>
-  {/* <DevTools store={ store }/> */}
+  <DevTools store={ store }/>
 </div>, document.getElementById('root'));

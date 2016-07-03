@@ -17,7 +17,7 @@ function Footer({tabs}) {
   });
   let classNameForFooter = cx({
     footer: true,
-    hide: true,
+    // hide: true,
   });
   let classNameForLeft = cx({
     left: true,

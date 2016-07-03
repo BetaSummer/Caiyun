@@ -22,26 +22,40 @@
   position: relative;
   width: calc(96% / 3);
   margin-left: 1%;
-  height:100%;
+  height: calc(96vw / 3);
   float: left;
   margin-bottom: 1.8rem;
+  >a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
   &:hover .intro {
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition: all .6s ease;
+    >h2,
+    >p {
+      transform: translate3d(0, 0, 0);
+      transition: all .6s ease;
+    }
   }
   @include breakPoint(mobile) {
     float: none;
-    margin-bottom: 1rem;
-    width: calc(100vw - 2%);
-    height: calc(100vw - 2%);
+    margin: 1vmin;
+    width: 98vmin;
+    height: 98vmin;
   }
   @include breakPoint(desktop) {
     margin-bottom: 3.2rem;
     width: calc(95% / 4);
+    height: calc(95vw / 4);
   }
 }
 
 :local(.intro) {
-  display: block;
+  opacity: 0;
+  visibility: hidden;
   position: absolute;
   left: 0;
   top: 0;
@@ -50,33 +64,30 @@
   background: rgba(0, 0, 0, .4);
   color: $light;
   text-align: center;
-  div {
-    position: absolute;
-    right: 4%;
-    top: 3%;
-    width: 14%;
-    height: 14%;
-    text-align: center;
-    /* todo 内容垂直居中？ */
-  }
-  h2 {
-    margin-top: 72%;
-    @include breakPoint(tablet) {
-      margin-top: 36%;
+  line-height: 1;
+  transition: all .6s ease;
+  >h2 {
+    margin-top: 60%;
+    transform: translate3d(0, -100%, 0);
+    @include breakPoint(mobile) {
+      margin-top: 88vmin;
+      margin-bottom: 2vmin;
+      padding-left: 2rem;
+      text-align: left;
     }
   }
-
-  p,span {
-    display: none;
-    @include breakPoint(tablet) {
-      display: block;
+  >p {
+    transform: translate3d(0, 100%, 0);
+    @include breakPoint(mobile) {
+      display: none;
     }
   }
-  @include breakPoint(tablet) {
-    display: none;
+  >h2,
+  >p {
+    transition: all .4s ease;
   }
-}
-
-:local(.fixed_intro) {
-  display: none;
+  @include breakPoint(mobile) {
+    opacity: 1;
+    visibility: visible;
+  }
 }
