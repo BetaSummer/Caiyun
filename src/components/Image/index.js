@@ -11,24 +11,37 @@ class Image extends React.Component {
   }
   constructor(props) {
     super(props);
-  }
-  componentDidMount() {
-    // 拿到需要渲染的组件
-    // 但通过 className 会不会拿到很多个，而非当前的这个？
-    // 是事件委托呢还是给每个 img 增加事件监听？
-    // 事件委托 如何拿到当前在视窗内的 img ？
-    // 每生成一个组件这里的代码再执行一遍？ 会不会造成事件的无意义的重复注册？ 性能问题？
-    // 判断当前的组件是否在视窗内部 且只在视窗内部
-    // 赋值 data-src 值给 src
+    this._onWindowScroll = this._onWindowScroll.bind(this);
   }
 
+  componentDidMount() {
+    this._onWindowScroll();
+    window.addEventListener('scroll', this._onWindowScroll, false);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this._onWindowScroll, false);
+  }
+
+  _onWindowScroll() {
+    const hasScrollTop = window.innerHeight + document.body.scrollTop;
+    const curImg = this.refs.lazyLoadImg;
+    if (curImg.getAttribute('src')) {
+      return false;
+    }
+    if (curImg.offsetParent && curImg.offsetParent.offsetTop < hasScrollTop) {
+      const dataSrc = curImg.getAttribute('data-src');
+      curImg.src = dataSrc;
+    }
+    return true;
+  }
   render() {
     const {imgSrc} = this.props;
     let classNameForImage = cx({
       base: true,
     });
     return (
-      <img data-src={imgSrc} src={imgSrc} className={classNameForImage}/>
+      <img ref="lazyLoadImg" data-src={imgSrc} className={classNameForImage}/>
     );
   }
 }

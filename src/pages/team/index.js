@@ -36,9 +36,6 @@ class Team extends React.Component {
       item: true,
     });
     const {team} = this.props.user;
-    console.log(this.props);
-    console.log(typeof this.props.params.id);
-
     const teamList = team.map((item, index) => {
       return (
         <div key={index} className={classNameForItem}>
