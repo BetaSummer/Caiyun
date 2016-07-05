@@ -5,7 +5,7 @@ import classNames from 'classNames/bind';
 
 const cx = classNames.bind(styles);
 
-function User({imgSrc, user}) {
+function User({user}) {
   let classNameForUser = cx({
     user: true,
   });
@@ -15,19 +15,23 @@ function User({imgSrc, user}) {
   let classNameForUserInfoDetail = cx({
     infoDetail: true,
   });
+  let linkList = Object.keys(user).filter((key) => {
+    return typeof user[key] === 'string' && user[key].indexOf('http') === 0;
+  }).map((key, index) => {
+    return <li key={index}><a href={user[key]}><i>{key}</i></a></li>;
+  });
   return (
     <div className={classNameForUser}>
-      <Image imgSrc = {imgSrc}/>
+      <Image imgSrc = {user.avator}/>
       <div className={classNameForUserInfo}>
         <h1>{user.name}</h1>
         <h2>{user.motto}</h2>
         <div className={classNameForUserInfoDetail}>
           <ul>
-            <li><a href=""><i>1</i></a></li>
-            <li><a href=""><i>2</i></a></li>
+            {linkList}
           </ul>
           <div>
-            <p>hello world hello rld hello rld hello world hello wo rld hello rld hello world hello wo rld hello rld hello world hello wo rld hello rld hello world hello world hello world hello rld hello rlrld hellorld hello  </p>
+            <p>我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我</p>
           </div>
         </div>
       </div>
@@ -36,7 +40,6 @@ function User({imgSrc, user}) {
 }
 
 User.propTypes = {
-  imgSrc: PropTypes.string.isRequired,
   user: PropTypes.object.isRequired,
 };
 

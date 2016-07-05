@@ -4,23 +4,27 @@ import {connect} from 'react-redux';
 import Header from '../components/header';
 import Footer from '../components/footer';
 // import some action
-
+import {selectTab} from '../actions/';
 class App extends React.Component {
   static propTypes = {
     children: React.PropTypes.object,
     tab: React.PropTypes.object,
+    location: React.PropTypes.object,
+    dispatch: React.PropTypes.func,
+    pathname: React.PropTypes.string,
   }
-
   constructor(props) {
     super(props);
   }
-
-  componentDidMount() {
-    // handle dom
+  componentWillReceiveProps(nextProps) {
+    const {tab, location, dispatch} = nextProps;
+    const pathname = location.pathname;
+    if (tab.curTab !== pathname) {
+      dispatch(selectTab(pathname));
+    }
   }
 
   render() {
-    // get some props from mapStateToProps
     const {tab} = this.props;
     const curTab = tab.curTab;
     const headerTabs = tab.headerTabs;
@@ -28,15 +32,12 @@ class App extends React.Component {
     return (
       <div>
         <Header tabs={headerTabs} curTab={curTab}/>
-        {/* some component like Header */}
         {this.props.children}
-        {/* some component like Footer */}
         <Footer tabs={footerTabs}/>
       </div>
     );
   }
 }
-
 
 function mapStateToProps(state) {
   return {

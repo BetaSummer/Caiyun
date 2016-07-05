@@ -1,6 +1,8 @@
 import ActionTypes from '../constants';
 
 const INITIAL_STATE = {
+  isFetching: false,
+  currentUser: {},
   team: [
     {
       id: 0,
@@ -86,7 +88,10 @@ function user(state = INITIAL_STATE, action) {
   case ActionTypes.RECEIVE_USER:
     return Object.assign({}, state, {
       isFetching: false,
-      /* receive data */
+    });
+  case ActionTypes.SELECT_USER:
+    return Object.assign({}, state, {
+      currentUser: state.team[action.userId],
     });
   default:
     return state;

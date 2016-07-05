@@ -3,7 +3,6 @@ import {Link} from 'react-router';
 import {connect} from 'react-redux';
 import styles from './index.scss';
 import classNames from 'classNames/bind';
-
 import Image from '../../components/image';
 const cx = classNames.bind(styles);
 
@@ -12,22 +11,12 @@ class Team extends React.Component {
     children: PropTypes.object,
     user: PropTypes.object,
     team: PropTypes.array,
-    params: PropTypes.object,
-    id: PropTypes.string,
+    dispatch: PropTypes.func,
   }
   constructor(props) {
     super(props);
     this.props = props;
   }
-
-  componentWillMount() {
-    const userId = this.props.params.id;
-    if (userId) {
-      // dispatch select currentTab teamDetail to hide header and footer
-      // dispatch select user data By Id
-    }
-  }
-
   render() {
     let classNameForTeam = cx({
       team: true,
@@ -39,7 +28,7 @@ class Team extends React.Component {
     const teamList = team.map((item, index) => {
       return (
         <div key={index} className={classNameForItem}>
-          <Link to={`/team/${item.id}`}>
+          <Link to={`/user/${item.id}`}>
             <Image imgSrc={item.avator}/>
             <div className={styles.intro}>
               <h2>{item.name}</h2>
@@ -54,7 +43,6 @@ class Team extends React.Component {
         <h1>TEAM</h1>
         <p>We reveal our inner heroes every day when creating interesting things</p>
         {teamList}
-        {this.props.children}
       </div>
     );
   }

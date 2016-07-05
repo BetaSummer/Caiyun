@@ -1,36 +1,54 @@
-import React from 'react';
+import React, {PropTypes} from 'react';
+import {connect} from 'react-redux';
 import classNames from 'classNames/bind';
 import {Link} from 'react-router';
 import styles from './index.scss';
-
+import {selectTab, selectUser} from '../../actions/';
 const cx = classNames.bind(styles);
 
 import User from '../../components/user';
 class Person extends React.Component {
+  static propTypes = {
+    params: PropTypes.object,
+    id: PropTypes.string,
+    dispatch: PropTypes.func,
+    currentUser: PropTypes.object,
+  }
   constructor(props) {
     super(props);
   }
+  componentWillMount() {
+    const userId = this.props.params.id;
+    const {dispatch} = this.props;
+    if (userId) {
+      dispatch(selectUser(userId));
+    }
+  }
+  componentWillUnmount() {
+    const {dispatch} = this.props;
+    dispatch(selectTab('team'));
+  }
   render() {
-    const user = {
-      name: 'ahbing',
-      imgSrc: imgSrc,
-      motto: 'hello world',
-    };
-    const imgSrc = 'http://tva3.sinaimg.cn/crop.39.0.1085.1085.180/0068u9YVgw1esnarv75jgj30wu0u87d9.jpg';
-
     let classNameForPerson = cx({
-      // hidden: true,
       person: true,
     });
+    const {currentUser} = this.props;
     return (
       <div className={classNameForPerson}>
         <div className={styles.closeBtn}>
           <Link to="/team">&times;</Link>
         </div>
-        <User imgSrc = {imgSrc} user = {user}/>
+        {currentUser.name && <User user = {currentUser}/>}
       </div>
     );
   }
 }
 
-export default Person;
+function mapStateToProps(state) {
+  const {currentUser} = state.user;
+  return {
+    currentUser,
+  };
+}
+
+export default connect(mapStateToProps)(Person);

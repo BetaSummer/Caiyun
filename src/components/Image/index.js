@@ -7,7 +7,7 @@ const cx = classNames.bind(styles);
 
 class Image extends React.Component {
   static propTypes = {
-    imgSrc: PropTypes.string.isRequired,
+    imgSrc: PropTypes.string,
   }
   constructor(props) {
     super(props);
@@ -31,7 +31,7 @@ class Image extends React.Component {
     }
     if (curImg.offsetParent && curImg.offsetParent.offsetTop < hasScrollTop) {
       const dataSrc = curImg.getAttribute('data-src');
-      curImg.src = dataSrc;
+      if (dataSrc) curImg.src = dataSrc;
     }
     return true;
   }

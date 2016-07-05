@@ -6,8 +6,9 @@
   left: 0;
   top: 0;
   background-color: #fff;
+  z-index: 233333333;
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   overflow-y: scroll;
   // @include animation to fade in/out
 }

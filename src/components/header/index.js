@@ -9,7 +9,6 @@ const cx = classNames.bind(styles);
 function Header({tabs, curTab}) {
   let classNameForHeader = cx({
     header: true,
-    // hide: true,
   });
   let classNameForLogo = cx({
     logo: true,
@@ -21,7 +20,7 @@ function Header({tabs, curTab}) {
   let navList = tabs.map((item, index) => {
     const tabName = item.tabName;
     let classNameForCurTab = cx({
-      curTab: curTab === tabName,
+      isCurTab: curTab === tabName,
     });
     if (item.isLink) {
       return <li key={index}><a className={classNameForCurTab} href={item.href}>{tabName.toUpperCase()}</a></li>;

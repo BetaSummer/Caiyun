@@ -40,11 +40,10 @@
       padding: 6px 0;
       &:hover,
       &:active,
-      &.curTab {
+      &.isCurTab {
         border-bottom: 2px solid $red;
         color: $black;
       }
     }
   }
-
 }

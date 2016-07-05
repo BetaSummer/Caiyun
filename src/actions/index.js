@@ -2,7 +2,7 @@ import ActionTypes from '../constants';
 
 export function selectUser(userId) {
   return {
-    type: ActionTypes.REQUEST_USER,
+    type: ActionTypes.SELECT_USER,
     userId,
   };
 }
