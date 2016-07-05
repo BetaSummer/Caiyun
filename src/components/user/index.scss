@@ -4,14 +4,17 @@
   max-width: 78rem;
   width: 100%;
   height: 80vh;
+  box-sizing: border-box;
   @include center();
   margin-bottom: 10rem;
   img {
     max-width: 100%;
   }
   @include breakPoint(mobile) {
-    width: 96%;
-    margin-left: 2%;
+    position: relative;
+    top: 1vmin;
+    width: 96vmin;
+    height: 60vmin;
   };
 }
 
@@ -34,28 +37,42 @@
   border-top: 2px solid #000;
   min-height: 10rem;
   display: flex;
+  @include breakPoint(mobile) {
+    flex-wrap: wrap;
+  };
   >div,
   >ul {
     display: flex;
     padding:0 4rem;
     height: inherit;
+    @include breakPoint(mobile) {
+      justify-content: flex-start;
+    };
   }
   >ul {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     border-right: 2px solid #000;
-    flex-wrap: wrap-reverse;
     li {
       width: 4rem;
       height: 4rem;
+      margin: 0 1rem;
       overflow: hidden;
-      background: #ccc;
     }
+    @include breakPoint(mobile) {
+      border: none;
+      width: 100%;
+      justify-content: flex-start;
+      padding: 2rem 0 0 0;
+    };
   }
-  >div p{
-    line-height: 1.2;
-    overflow-wrap: break-word;
-    flex-wrap: wrap-reverse;
+  >div{
+    padding: 0 1rem;
+    p {
+      line-height: 1.4;
+      padding: 0 1rem;
+      word-break: break-word;
+    }
   }
 }

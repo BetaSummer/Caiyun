@@ -15,6 +15,7 @@ function Header({tabs, curTab}) {
   });
   let classNameForList = cx({
     nav: true,
+    mNav: false,
   });
 
   let navList = tabs.map((item, index) => {
@@ -29,12 +30,11 @@ function Header({tabs, curTab}) {
   });
   return (
     <header className={classNameForHeader}>
-      {/* logo */}
       <div className={classNameForLogo}>
         <Link to="/"><img src="http://www.betahouse.us/dist/imgs/logo.png"/></Link>
       </div>
-      {/* navlist */}
       <nav className={classNameForList}>
+        <span>menu</span>
         <ul>
           {navList}
         </ul>

@@ -25,11 +25,21 @@
   z-index: 23333;
   display: table;
   @include breakPoint(mobile) {
-    right: 2%;
+    left: 1vmin;
+    top: 1vmin;
+    width: 98vmin;
+    height: 60vmin;
+    border: none;
+    background-color: transparent;
+    opacity: 0;
   };
   &:hover {
     background: #fff;
     border-color: $red;
+    @include breakPoint(mobile) {
+      background-color: transparent;
+      opacity: 0;
+    }
   }
   a {
     display: table-cell;

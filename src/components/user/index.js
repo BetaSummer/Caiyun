@@ -18,7 +18,8 @@ function User({user}) {
   let linkList = Object.keys(user).filter((key) => {
     return typeof user[key] === 'string' && user[key].indexOf('http') === 0;
   }).map((key, index) => {
-    return <li key={index}><a href={user[key]}><i>{key}</i></a></li>;
+    const svgSrc = `/src/assets/svgs/${key}.svg`;
+    return <li key={index}><a href={user[key]}><img src={svgSrc}/></a></li>;
   });
   return (
     <div className={classNameForUser}>
@@ -31,7 +32,7 @@ function User({user}) {
             {linkList}
           </ul>
           <div>
-            <p>我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我我是谁，你看不到我</p>
+            <p>{user.describe}</p>
           </div>
         </div>
       </div>
