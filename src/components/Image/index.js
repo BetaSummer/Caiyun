@@ -31,7 +31,9 @@ class Image extends React.Component {
     }
     if (curImg.offsetParent && curImg.offsetParent.offsetTop < hasScrollTop) {
       const dataSrc = curImg.getAttribute('data-src');
-      if (dataSrc) curImg.src = dataSrc;
+      if (dataSrc) {
+        curImg.src = require(`./../../assets/images/${dataSrc}`);
+      }
     }
     return true;
   }

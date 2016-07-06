@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ImageContainer from '../../containers/image';
+import Image from '../../components/image/';
 
 import styles from './index.scss';
 
@@ -18,7 +18,7 @@ class Index extends React.Component {
         </section>
         <section className={styles.introBox}>
           <a href="http://google.com" className={styles.introItem}>
-            <ImageContainer/>
+            <Image imgSrc="sea-clouds-cloudy-flowers-landscape.jpeg"/>
             <div className={styles.intro}>
               <div className={styles.content}>
                 <h1>hello world</h1>
@@ -27,7 +27,7 @@ class Index extends React.Component {
             </div>
           </a>
           <a href="http://google.com" className={styles.introItem}>
-            <ImageContainer/>
+            <Image imgSrc="sea-clouds-cloudy-flowers-landscape.jpeg"/>
             <div className={styles.intro}>
               <div className={styles.content}>
                 <h1>hello world</h1>

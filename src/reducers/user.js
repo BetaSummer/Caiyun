@@ -7,7 +7,7 @@ const INITIAL_STATE = {
     {
       id: 0,
       name: 'ahbing',
-      avator: '/src/assets/images/sea-clouds-cloudy-flowers-landscape.jpeg',
+      avator: 'sea-clouds-cloudy-flowers-landscape.jpeg',
       blog: 'http://huangbingbing.com',
       github: 'http://github.com/ahbing',
       describe: '人来人往',
@@ -19,7 +19,7 @@ const INITIAL_STATE = {
     {
       id: 1,
       name: 'ahbing',
-      avator: '/src/assets/images/sea-clouds-cloudy-flowers-landscape.jpeg',
+      avator: 'sea-clouds-cloudy-flowers-landscape.jpeg',
       blog: 'http://huangbingbing.com',
       github: 'http://github.com/ahbing',
       describe: '人来人往',
@@ -31,7 +31,7 @@ const INITIAL_STATE = {
     {
       id: 2,
       name: 'ahbing',
-      avator: '/src/assets/images/sea-clouds-cloudy-flowers-landscape.jpeg',
+      avator: 'sea-clouds-cloudy-flowers-landscape.jpeg',
       blog: 'http://huangbingbing.com',
       github: 'http://github.com/ahbing',
       describe: '人来人往',
@@ -43,7 +43,7 @@ const INITIAL_STATE = {
     {
       id: 3,
       name: 'ahbing',
-      avator: '/src/assets/images/sea-clouds-cloudy-flowers-landscape.jpeg',
+      avator: 'sea-clouds-cloudy-flowers-landscape.jpeg',
       blog: 'http://huangbingbing.com',
       github: 'http://github.com/ahbing',
       describe: '人来人往',
@@ -55,7 +55,7 @@ const INITIAL_STATE = {
     {
       id: 4,
       name: 'ahbing',
-      avator: '/src/assets/images/sea-clouds-cloudy-flowers-landscape.jpeg',
+      avator: 'sea-clouds-cloudy-flowers-landscape.jpeg',
       blog: 'http://huangbingbing.com',
       github: 'http://github.com/ahbing',
       describe: '人来人往',
@@ -67,7 +67,7 @@ const INITIAL_STATE = {
     {
       id: 5,
       name: 'ahbing',
-      avator: '/src/assets/images/sea-clouds-cloudy-flowers-landscape.jpeg',
+      avator: 'sea-clouds-cloudy-flowers-landscape.jpeg',
       blog: 'http://huangbingbing.com',
       github: 'http://github.com/ahbing',
       describe: '人来人往',
