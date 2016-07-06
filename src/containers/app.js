@@ -15,6 +15,10 @@ class App extends React.Component {
   }
   constructor(props) {
     super(props);
+    this.toggleMobileMenu = this.toggleMobileMenu.bind(this);
+  }
+  state = {
+    isShowMobileMenu: false,
   }
   componentWillReceiveProps(nextProps) {
     const {tab, location, dispatch} = nextProps;
@@ -26,16 +30,23 @@ class App extends React.Component {
 
   render() {
     const {tab} = this.props;
+    const {isShowMobileMenu} = this.state;
     const curTab = tab.curTab;
     const headerTabs = tab.headerTabs;
     const footerTabs = tab.footerTabs;
     return (
       <div>
-        <Header tabs={headerTabs} curTab={curTab}/>
+        <Header tabs={headerTabs} curTab={curTab} isShowMobileMenu={isShowMobileMenu} toggleMobileMenu={this.toggleMobileMenu}/>
         {this.props.children}
         <Footer tabs={footerTabs}/>
       </div>
     );
+  }
+
+  toggleMobileMenu() {
+    this.setState({
+      isShowMobileMenu: !this.state.isShowMobileMenu,
+    });
   }
 }
 

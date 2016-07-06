@@ -24,54 +24,65 @@ $mHeaderHeight: 6rem;
     max-height: 100%;
   }
 }
-
+:local(.menuBtn) {
+  display: none;
+  @include breakPoint(mobile) {
+    display: block;
+    width: 2rem;
+    height: inherit;
+    position: absolute;
+    right: 1rem;
+    top: 0;
+    z-index: 23333;
+    line-height: inherit;
+  };
+}
 :local(.nav) {
   position: relative;
   float: right;
   height: inherit;
   padding-right: 8rem;
   line-height: inherit;
-  span {
-    display: none;
+  >ul {
     @include breakPoint(mobile) {
-      display: block;
-      position: absolute;
-      right: 1rem;
-      top: 0;
-      line-height: inherit;
+      position: fixed;
+      top: $mHeaderHeight;
+      left: 0;
+      width: 100vw;
+      transition: all .6s ease;
+      transform: translate3d(0, -200%, 0);
+      opacity: 0;
     };
   }
   li {
     display: inline-block;
     padding-right: 3rem;
     width: auto;
+    @include breakPoint(mobile) {
+      width: 100%;
+      border-bottom: 1px solid #222;
+      box-sizing: border-box;
+      background: #000;
+      padding: 0 0 0 2rem;
+    };
     a {
       padding: 6px 0;
+      @include breakPoint(mobile) {
+        color: #fff;
+      };
       &:hover,
       &:active,
       &.isCurTab {
         border-bottom: 2px solid $red;
-        color: $black;
       }
     }
   }
 }
-
-:local(.mNav) {
+:local(.mShow) {
   >ul {
-    position: fixed;
-    top: $mHeaderHeight;
-    left: 0;
     z-index: 233333;
-    width: 100vw;
-    >li {
-      width: 100%;
-      a {
-        color: #fff;
-      }
-      box-sizing: border-box;
-      background: #000;
-      padding: 0 0 0 2rem;
-    }
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    transition: all .4s ease;
   }
 }

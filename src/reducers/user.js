@@ -3,6 +3,7 @@ import ActionTypes from '../constants';
 const INITIAL_STATE = {
   isFetching: false,
   currentUser: {},
+  scrollTop: 0,
   team: [
     {
       id: 0,
@@ -92,6 +93,10 @@ function user(state = INITIAL_STATE, action) {
   case ActionTypes.SELECT_USER:
     return Object.assign({}, state, {
       currentUser: state.team[action.userId],
+    });
+  case ActionTypes.SET_SCROLLTOP:
+    return Object.assign({}, state, {
+      scrollTop: action.scrollTop,
     });
   default:
     return state;

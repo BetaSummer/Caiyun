@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './index.scss';
 
+import Image from '../../components/image/';
+
 class About extends React.Component {
   constructor(props) {
     super(props);
@@ -11,9 +13,8 @@ class About extends React.Component {
         <h1>我们的betahouse</h1>
         <p className={styles.text}>Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend</p>
         <p className={styles.text}>Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend</p>
-        {/* 点击弹出层 compoent */}
-        {/* Img Component */}
-        {/* Video Component */}
+        <Image imgSrc="sea-clouds-cloudy-flowers-landscape.jpeg"/>
+        <p className={styles.text}>Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend</p>
       </div>
     );
   }

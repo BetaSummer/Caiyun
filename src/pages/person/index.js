@@ -4,6 +4,7 @@ import classNames from 'classNames/bind';
 import {Link} from 'react-router';
 import styles from './index.scss';
 import {selectTab, selectUser} from '../../actions/';
+import {pageScrollTopAnimate} from '../../javascripts/helper';
 const cx = classNames.bind(styles);
 
 import User from '../../components/user';
@@ -13,6 +14,7 @@ class Person extends React.Component {
     id: PropTypes.string,
     dispatch: PropTypes.func,
     currentUser: PropTypes.object,
+    scrollTop: PropTypes.number,
   }
   constructor(props) {
     super(props);
@@ -32,11 +34,11 @@ class Person extends React.Component {
     let classNameForPerson = cx({
       person: true,
     });
-    const {currentUser} = this.props;
+    const {currentUser, scrollTop} = this.props;
     return (
       <div className={classNameForPerson}>
         <div className={styles.closeBtn}>
-          <Link to="/team">&times;</Link>
+          <Link to="/team" onClick = {() => pageScrollTopAnimate(scrollTop, 400)} onTouchEnd = {() => pageScrollTopAnimate(scrollTop, 400)}>&times;</Link>
         </div>
         {currentUser.name && <User user = {currentUser}/>}
       </div>
@@ -45,8 +47,9 @@ class Person extends React.Component {
 }
 
 function mapStateToProps(state) {
-  const {currentUser} = state.user;
+  const {currentUser, scrollTop} = state.user;
   return {
+    scrollTop,
     currentUser,
   };
 }

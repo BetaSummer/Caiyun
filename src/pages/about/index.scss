@@ -7,17 +7,20 @@
   h1 {
     text-align: center;
   }
+  img,
   p {
     max-width: 60%;
     margin-left: 20%;
-    text-indent: 2rem;
-    line-height: 1.2;
-    word-break: break-all;
-    text-indent: ($normal + 2);
     @include breakPoint(mobile) {
       max-width: 90%;
       margin-left: 5%;
     };
+  }
+  p {
+    text-indent: 2rem;
+    line-height: 1.2;
+    word-break: break-all;
+    text-indent: ($normal + 2);
     @include breakPoint(desktop) {
       text-indent: ($larger);
     }

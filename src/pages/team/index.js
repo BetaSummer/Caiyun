@@ -4,6 +4,8 @@ import {connect} from 'react-redux';
 import styles from './index.scss';
 import classNames from 'classNames/bind';
 import Image from '../../components/image';
+import {getWindowScrollTop} from '../../javascripts/helper';
+import {setScrollTop} from '../../actions/';
 const cx = classNames.bind(styles);
 
 class Team extends React.Component {
@@ -16,6 +18,10 @@ class Team extends React.Component {
   constructor(props) {
     super(props);
     this.props = props;
+  }
+  componentWillUnmount() {
+    const {dispatch} = this.props;
+    dispatch(setScrollTop(getWindowScrollTop()));
   }
   render() {
     let classNameForTeam = cx({

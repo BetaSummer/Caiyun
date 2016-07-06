@@ -5,4 +5,5 @@ export default keyMirror({
   RECEIVE_USER: null,
   SELECT_USER: null,
   SELECT_TAB: null,
+  SET_SCROLLTOP: null,
 });

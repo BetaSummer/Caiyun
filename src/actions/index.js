@@ -20,3 +20,10 @@ export function selectTab(tab) {
     curTab: tab,
   };
 }
+
+export function setScrollTop(scrollTop) {
+  return {
+    type: ActionTypes.SET_SCROLLTOP,
+    scrollTop,
+  };
+}
