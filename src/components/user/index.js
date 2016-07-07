@@ -18,8 +18,7 @@ function User({user}) {
   let linkList = Object.keys(user).filter((key) => {
     return typeof user[key] === 'string' && user[key].indexOf('http') === 0;
   }).map((key, index) => {
-    const svgSrc = `/src/assets/svgs/${key}.svg`;
-    return <li key={index}><a href={user[key]}><img src={svgSrc}/></a></li>;
+    return <li key={index}><a href={user[key]}><img src={require(`./../../assets/svgs/${key}.svg`)}/></a></li>;
   });
   return (
     <div className={classNameForUser}>

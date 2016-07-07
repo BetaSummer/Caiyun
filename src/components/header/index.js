@@ -44,7 +44,7 @@ class Header extends React.Component {
           <Link to="/"><img src="http://www.betahouse.us/dist/imgs/logo.png"/></Link>
         </div>
         <div className={styles.menuBtn} onTouchEnd={() => { toggleMobileMenu(); }}>
-          <img src="/src/assets/svgs/more.svg" />
+          <img src={require('./../../assets/svgs/more.svg')} />
         </div>
         <nav className={classNameForList}>
           <ul>
