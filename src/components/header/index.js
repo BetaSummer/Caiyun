@@ -41,7 +41,7 @@ class Header extends React.Component {
     return (
       <header className={classNameForHeader}>
         <div className={classNameForLogo}>
-          <Link to="/"><img src="http://www.betahouse.us/dist/imgs/logo.png"/></Link>
+          <Link to="/"><img src={require('./../../assets/images/logo.png')}/></Link>
         </div>
         <div className={styles.menuBtn} onTouchEnd={() => { toggleMobileMenu(); }}>
           <img src={require('./../../assets/svgs/more.svg')} />

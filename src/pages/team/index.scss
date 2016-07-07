@@ -47,7 +47,7 @@
     height: 98vmin;
   }
   @include breakPoint(desktop) {
-    margin-bottom: 3.2rem;
+    margin-bottom: 2vmin;
     width: calc(95% / 4);
     height: calc(95vw / 4);
   }

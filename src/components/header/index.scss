@@ -21,7 +21,10 @@ $mHeaderHeight: 6rem;
     padding-left: 1rem;
   }
   img {
-    max-height: 100%;
+    height: 3rem;
+    @include breakPoint(mobile) {
+      height: 2rem;
+    }
   }
 }
 :local(.menuBtn) {
