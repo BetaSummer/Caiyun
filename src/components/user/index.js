@@ -18,20 +18,20 @@ function User({user}) {
   let linkList = Object.keys(user).filter((key) => {
     return typeof user[key] === 'string' && user[key].indexOf('http') === 0;
   }).map((key, index) => {
-    return <li key={index}><a href={user[key]}><img src={require(`./../../assets/svgs/${key}.svg`)}/></a></li>;
+    return <li key={index}><a target="_blank" href={user[key]}><img src={require(`./../../assets/svgs/${key}.svg`)}/></a></li>;
   });
   return (
     <div className={classNameForUser}>
-      <Image imgSrc = {user.avator}/>
+      <Image imgSrc = {user.imgsrc}/>
       <div className={classNameForUserInfo}>
         <h1>{user.name}</h1>
-        <h2>{user.motto}</h2>
+        <h2>工作室第 {user.classtype} 届成员</h2>
         <div className={classNameForUserInfoDetail}>
           <ul>
             {linkList}
           </ul>
           <div>
-            <p>{user.describe}</p>
+            <p>{user.intro}</p>
           </div>
         </div>
       </div>

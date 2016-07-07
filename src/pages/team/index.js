@@ -34,11 +34,11 @@ class Team extends React.Component {
     const teamList = team.map((item, index) => {
       return (
         <div key={index} className={classNameForItem}>
-          <Link to={`/user/${item.id}`}>
-            <Image imgSrc={item.avator}/>
+          <Link to={`/user/${item.id - 1}`}>
+            <Image imgSrc={item.imgsrc}/>
             <div className={styles.intro}>
               <h2>{item.name}</h2>
-              <p>{item.describe}</p>
+              <p>{item.professional}</p>
             </div>
           </Link>
         </div>

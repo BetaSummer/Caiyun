@@ -3,7 +3,7 @@
     "name": "李璐慧",
     "classtype": "4",
     "professional": "软件工程",
-    "intro": "做喜欢的事情<br/>认真的",
+    "intro": "做喜欢的事情认真的",
     "imgsrc": "llh.jpg",
     "github": "https://github.com/LDingLDing",
     "blog": "#"
@@ -12,7 +12,7 @@
     "name": "黄炳炳",
     "classtype": "4",
     "professional": "工商管理",
-    "intro": "我认认真真的反思了一下,<br/>我几乎不可能有机会改变世界。<br/>去改良我身边的一些事情，<br/>才是我应该做的，当然是和工作室的小伙伴一起。<br/>",
+    "intro": "我认认真真的反思了一下,我几乎不可能有机会改变世界。去改良我身边的一些事情，才是我应该做的，当然是和工作室的小伙伴一起。",
     "imgsrc": "hbb.jpg",
     "github": "https://github.com/ahbing",
     "blog": "https://ahbing.github.io"
@@ -30,7 +30,7 @@
     "name": "黄丽雅",
     "classtype": "4",
     "professional": "产品设计",
-    "intro": "我想用长得不一样的脑子来讲我对世界的认知<br/>任何一种表达任何一种语言都是为了能与你一起玩耍<br/>这次我们用代码好不好=皿=",
+    "intro": "我想用长得不一样的脑子来讲我对世界的认知任何一种表达任何一种语言都是为了能与你一起玩耍这次我们用代码好不好=皿=",
     "imgsrc": "hly.jpg",
     "github": "#",
     "blog": "#"
@@ -57,7 +57,7 @@
     "name": "吴冰清",
     "classtype": "4",
     "professional": "产品设计",
-    "intro": "爱旅游，爱摄影，爱美食<br/>爱和图片打交道，时刻记录生活<br/>喜欢把生活变成影像留存的感觉<br/>多去尝试，不怕伤痕也不怕失败，找到自己热爱的方向<br/>做喜欢的事，走喜欢的路。",
+    "intro": "爱旅游，爱摄影，爱美食爱和图片打交道，时刻记录生活喜欢把生活变成影像留存的感觉多去尝试，不怕伤痕也不怕失败，找到自己热爱的方向做喜欢的事，走喜欢的路。",
     "imgsrc": "wbq.jpg",
     "github": "#",
     "blog": "#"
@@ -84,7 +84,7 @@
     "name": "余刚",
     "classtype": "4",
     "professional": "软件工程",
-    "intro": "18岁的我，<br/>对任何事都有好奇心，<br/>坚信着<br/>EvErYthing Will bE Ok ！",
+    "intro": "18岁的我，对任何事都有好奇心，坚信着EvErYthing Will bE Ok ！",
     "imgsrc": "yg.jpg",
     "github": "#",
     "blog": "#"
@@ -93,7 +93,7 @@
     "name": "虞俊苗",
     "classtype": "4",
     "professional": "通信工程",
-    "intro": "喜欢从事自己感兴趣的事情，要么不做，要做就要做好。<br/>未来很长，希望能和β-house的小伙伴慢慢欣赏未来路上的风景。",
+    "intro": "喜欢从事自己感兴趣的事情，要么不做，要做就要做好。未来很长，希望能和β-house的小伙伴慢慢欣赏未来路上的风景。",
     "imgsrc": "yjm.jpg",
     "github": "#",
     "blog": "#"
@@ -120,7 +120,7 @@
     "name": "洪涵",
     "classtype": "5",
     "professional": "工业设计",
-    "intro": "少言多行<br/>梦想成为技术宅和大触<br/>betaのみんなが大好き",
+    "intro": "少言多行梦想成为技术宅和大触betaのみんなが大好き",
     "imgsrc": "hh.jpg",
     "github": "",
     "blog": "#"
@@ -129,7 +129,7 @@
     "name": "黄徐涛",
     "classtype": "5",
     "professional": "计算机科学与技术",
-    "intro": "热爱生活，热爱前端，还爱折腾；<br/>...怎么说呢，学习前端既是一件事比较累的事情，但又不乏欢乐，尤其是在beta这个大家庭中欢乐就更多了；<br/>so,感谢beta为我提供了一个良好的学习平台,还有美丽的学姐和帅气的学长们；<br/>最后仅以老乔的一句话献给自己以及所有技术宅：stay Hungry Stay Foolish.",
+    "intro": "热爱生活，热爱前端，还爱折腾；...怎么说呢，学习前端既是一件事比较累的事情，但又不乏欢乐，尤其是在beta这个大家庭中欢乐就更多了；so,感谢beta为我提供了一个良好的学习平台,还有美丽的学姐和帅气的学长们；最后仅以老乔的一句话献给自己以及所有技术宅：stay Hungry Stay Foolish.",
     "imgsrc": "hxt.jpg",
     "github": "https://github.com/huangxutao",
     "blog": "http://huangxutao.github.io/"
@@ -138,7 +138,7 @@
     "name": "任丰烨",
     "classtype": "5",
     "professional": "软件工程",
-    "intro": "温故知新 学无止境 在程序猴的世界里没有不可能<i><br/>-为什么要打代码<br/>-因为创意就在那里<i/>",
+    "intro": "温故知新 学无止境 在程序猴的世界里没有不可能<i>-为什么要打代码-因为创意就在那里<i/>",
     "imgsrc": "rfy.jpg",
     "github": "https://github.com/winnd",
     "blog": "http://winnd.github.io/"
@@ -149,14 +149,14 @@
     "professional": "自动化",
     "intro": "热爱技术，正在学习iOS开发，喜欢极简风格，爱音乐，对复古的爵士乐和老电影没有抵抗力。渴望一种简单生活，有些奇奇怪怪的爱好，有时是三分钟热度，有时是热爱，可能想要尝试不同事物，我现在还没有能力去做我自己，做我所想，为了这想要的生活，我会拼劲全力。你若盛开，清风自来。",
     "imgsrc": "wxz.jpg",
-    "github": "https://judges321.github.io",
+    "github": "",
     "blog": "http://wangxinze.com"
 }, {
     "id": "18",
     "name": "徐成超",
     "classtype": "5",
     "professional": "计算机科学与技术",
-    "intro": "爱编程，爱后台，爱前端，博爱一身，妾身就是做不到样样通，还是努力敲敲代码，看看后台吧。<br/>跟你们说个冷笑话嗷，杀一个程序员不需要用枪，改三次需求就可以了。哈哈哈哈！",
+    "intro": "爱编程，爱后台，爱前端，博爱一身，妾身就是做不到样样通，还是努力敲敲代码，看看后台吧。跟你们说个冷笑话嗷，杀一个程序员不需要用枪，改三次需求就可以了。哈哈哈哈！",
     "imgsrc": "xcc.jpg",
     "github": "#",
     "blog": "#"
@@ -195,7 +195,7 @@
     "intro": "热爱技术，希望每天有所进步。",
     "imgsrc": "hpf.jpg",
     "github": "#",
-    "blog": "#"
+    "blog": "http://hupengfei.com"
 }, {
     "id": "23",
     "name": "李晓菲",
@@ -213,7 +213,7 @@
     "intro": "热爱Photography Html/Css Php,坚信Your Future Is Created By What {You Do Today}",
     "imgsrc": "ly.jpg",
     "github": "#",
-    "blog": "#"
+    "blog": "http://liyi.it/"
 }, {
     "id": "25",
     "name": "麻凯倩",
@@ -222,7 +222,7 @@
     "intro": "热爱前端，喜欢html5和css3，在学习JavaScript中，对各种好玩的有趣的事情都很感兴趣，但是一旦认定了的事情就会一直坚持下去。最喜欢用兴趣去学习，喜欢充满正能量的每一天！希望工作室的每一个人越走越好~",
     "imgsrc": "mkq.jpg",
     "github": "#",
-    "blog": "#"
+    "blog": "http://makaiqian.com/"
 }, {
     "id": "26",
     "name": "项梦霞",
@@ -381,9 +381,8 @@
     "name": "朱力",
     "classtype": "1",
     "professional": "通信工程",
-    "intro": "热爱一切可以折腾的东西，例如Minecraft，编程，热爱电影和音乐，正在刷IMDB Top 250。希望 β-house 可以一直持续下去，能够让每一个成员，获得快乐，获得成长。目前就职于大搜车。",
+    "intro": "热爱一切可以折腾的东西，例如Minecraft，编程，热爱电影和音乐，正在刷IMDB Top 250。希望 β-house 可以一直持续下去，能够让每一个成员，获得快乐，获得成长。目前就职于天猫。",
     "imgsrc": "zl.jpg",
-    "github": "#",
-    "blog": "#"
+    "github": "https://github.com/lisposter",
+    "blog": "http://zhu.li/"
 }]
-

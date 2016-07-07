@@ -28,13 +28,15 @@ class Person extends React.Component {
   }
   componentWillUnmount() {
     const {dispatch} = this.props;
+    // 清空 currentUser
+    dispatch(selectUser(-1));
     dispatch(selectTab('team'));
   }
   render() {
     let classNameForPerson = cx({
       person: true,
     });
-    const {currentUser, scrollTop} = this.props;
+    const {scrollTop, currentUser} = this.props;
     return (
       <div className={classNameForPerson}>
         <div className={styles.closeBtn}>

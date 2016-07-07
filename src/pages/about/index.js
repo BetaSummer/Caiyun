@@ -13,7 +13,7 @@ class About extends React.Component {
         <h1>我们的betahouse</h1>
         <p className={styles.text}>Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend</p>
         <p className={styles.text}>Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend</p>
-        <Image imgSrc="sea-clouds-cloudy-flowers-landscape.jpeg"/>
+        <Image imgSrc="home.jpg"/>
         <p className={styles.text}>Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend Hello darkness my old friend</p>
       </div>
     );
