@@ -1,4 +1,13 @@
 [{
+    "id": "43",
+    "name": "唐良栋",
+    "classtype": "6",
+    "professional": "软件工程",
+    "intro": "向往简单的生活，身边有一群懂我，理解我的人。希望β-house 能一直传承下去，一直伴随着我们的青春。",
+    "imgsrc": "tld.jpg",
+    "github": "https://github.com/tangliangdong",
+    "blog": "http://www.tangliangdong.com"
+}, {
     "id": "42",
     "name": "李祥",
     "classtype": "5",
