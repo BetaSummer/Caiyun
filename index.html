@@ -7,13 +7,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Betahouse 2016 </title>
   <style>
+    body {
+      background: #fff;
+    }
     .loading {
       position: absolute;
+      z-index: -233;
+      top: 50vh;
+      left: 50vw;
       z-index: -1;
+      margin-left: -2.7em;
+      margin-top: -2.7em;
+      width: 5.4em;
+      height: 5.4em;
+      color: #FF5F5F;
+      transform: rotate(45deg);
+    }
+    .box {
+      position: absolute;
+      left: 0;
+      bottom: -.1em;
+      width: 1em;
+      height: 1em;
+      border: .25em solid;
+      border-radius: 15%;
+      transform: translate(0, -1em);
+      animation: push 2.5s cubic-bezier(.79, 0, .47, .97) infinite;
+    }
+    .hill {
+      position: absolute;
+      width: 7.4em;
+      height: 7.4em;
+      left: 1.5em;
+      bottom: 0;
+      border-left: .25em solid;
+    }
+    @keyframes push {
+      0% {
+        transform: translate(0, -1em) rotate(0deg);
+      }
+      5% {
+        transform: translate(0, -1em) rotate(-5deg);
+      }
+      20% {
+        transform: translate(0, -2em) rotate(95deg);
+      }
+      25% {
+        transform: translate(0, -2em) rotate(90deg);
+      }
+
+      30% {
+        transform: translate(0, -2em) rotate(85deg);
+      }
+      45% {
+        transform: translate(0, -3em) rotate(185deg);
+      }
+      50% {
+        transform: translate(0, -3em) rotate(180deg);
+      }
+
+      55% {
+        transform: translate(0, -3em) rotate(175deg);
+      }
+      70% {
+        transform: translate(0, -4em) rotate(275deg);
+      }
+      75% {
+        transform: translate(0, -4em) rotate(270deg);
+      }
+      100% {
+        transform: translate(0, -1em) rotate(0deg);
+      }
+    }
+    .browsehappy {
       width: 100%;
-      margin-top: 50%;
       text-align: center;
-      transform: translate3d(0, -50%, 0);
+      position: fixed;
+      z-index: 999999999;
     }
     #root {
       background: #fff;
@@ -21,7 +91,13 @@
   </style>
 <link href="/style.css" rel="stylesheet"></head>
 <body>
-  <div class="loading">loading...</div>
+  <!--[if lt IE 9]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <div class="loading">
+    <div class="box"></div>
+    <div class="hill"></div>
+  </div>
   <div id="root"></div>
-<script type="text/javascript" src="/main.6a8d46b820036d0f4329.js"></script></body>
+<script type="text/javascript" src="/main.5afc3ac05a2b7bb3fae3.js"></script></body>
 </html>
