@@ -8,14 +8,19 @@ class Index extends React.Component {
   constructor(props) {
     super(props);
   }
-
+  componentDidMount() {
+    const indexTitle = document.querySelector(`.${styles.indexTitle}`);
+    const textLen = indexTitle.textContent.length;
+    const textStyle = indexTitle.style;
+    textStyle.width = textLen + 'ch';
+    textStyle.animationTimingFunction = 'steps(' + textLen + '),steps(1)';
+  }
   render() {
-    let indexTitle = 'Hello darkness my old friend';
-    // let randomSrc = `home_${Math.floor(Math.random() * 5)}.jpg`;
+    const indexTitle = ['hi~ betahouse, happy birthday!', 'yanshu'];
     return (
       <div className={styles.wrapper}>
         <section className={styles.section1}>
-          <h1 className={styles.indexTitle}>{indexTitle}</h1>
+          <h1 className={styles.indexTitle}>{indexTitle[0]}</h1>
         </section>
         <section className={styles.introBox}>
           <a href="http://google.com" className={styles.introItem}>

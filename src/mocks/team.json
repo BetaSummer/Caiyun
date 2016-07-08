@@ -1,113 +1,5 @@
 [{
-    "id": "1",
-    "name": "李璐慧",
-    "classtype": "4",
-    "professional": "软件工程",
-    "intro": "做喜欢的事情认真的",
-    "imgsrc": "llh.jpg",
-    "github": "https://github.com/LDingLDing",
-    "blog": "#"
-}, {
-    "id": "2",
-    "name": "黄炳炳",
-    "classtype": "4",
-    "professional": "工商管理",
-    "intro": "我认认真真的反思了一下,我几乎不可能有机会改变世界。去改良我身边的一些事情，才是我应该做的，当然是和工作室的小伙伴一起。",
-    "imgsrc": "hbb.jpg",
-    "github": "https://github.com/ahbing",
-    "blog": "https://ahbing.github.io"
-}, {
-    "id": "3",
-    "name": "黄琳琅",
-    "classtype": "4",
-    "professional": "产品设计",
-    "intro": "简简单单，好好生活，好好爱自己。努力成为想要成为的人",
-    "imgsrc": "hll.jpg",
-    "github": "#",
-    "blog": "#"
-}, {
-    "id": "4",
-    "name": "黄丽雅",
-    "classtype": "4",
-    "professional": "产品设计",
-    "intro": "我想用长得不一样的脑子来讲我对世界的认知任何一种表达任何一种语言都是为了能与你一起玩耍这次我们用代码好不好=皿=",
-    "imgsrc": "hly.jpg",
-    "github": "#",
-    "blog": "#"
-}, {
-    "id": "5",
-    "name": "李育强",
-    "classtype": "4",
-    "professional": "网络工程",
-    "intro": "爱美剧，爱音乐；爱β-house，爱生活。希望成为一个能够游遍全世界的技术宅。",
-    "imgsrc": "lyq.jpg",
-    "github": "#",
-    "blog": "#"
-}, {
-    "id": "6",
-    "name": "泮斌俊",
-    "classtype": "4",
-    "professional": "软件工程",
-    "intro": "对移动端比较感兴趣，喜欢研究各类软件。",
-    "imgsrc": "pbj.jpg",
-    "github": "#",
-    "blog": "#"
-}, {
-    "id": "7",
-    "name": "吴冰清",
-    "classtype": "4",
-    "professional": "产品设计",
-    "intro": "爱旅游，爱摄影，爱美食爱和图片打交道，时刻记录生活喜欢把生活变成影像留存的感觉多去尝试，不怕伤痕也不怕失败，找到自己热爱的方向做喜欢的事，走喜欢的路。",
-    "imgsrc": "wbq.jpg",
-    "github": "#",
-    "blog": "#"
-}, {
-    "id": "8",
-    "name": "王涛",
-    "classtype": "4",
-    "professional": "软件工程",
-    "intro": "习惯有计划的生活，反感浪费时间的事，热爱前端的所有技术，喜欢收集各种前端特效，看其中的代码，希望能学以致用。热爱β-house，希望在这里能让自己变成强者。未来我希望能创办自己的网站（如淘宝，新浪...）",
-    "imgsrc": "wt.jpg",
-    "github": "#",
-    "blog": "#"
-}, {
-    "id": "9",
-    "name": "许骏宇",
-    "classtype": "4",
-    "professional": "通信工程",
-    "intro": "会果断的做自己喜欢的事情，时刻提醒自己 My Dream,My Love,My done.Just For Fun!",
-    "imgsrc": "xjy.jpg",
-    "github": "#",
-    "blog": "#"
-}, {
-    "id": "10",
-    "name": "余刚",
-    "classtype": "4",
-    "professional": "软件工程",
-    "intro": "18岁的我，对任何事都有好奇心，坚信着EvErYthing Will bE Ok ！",
-    "imgsrc": "yg.jpg",
-    "github": "#",
-    "blog": "#"
-}, {
-    "id": "11",
-    "name": "虞俊苗",
-    "classtype": "4",
-    "professional": "通信工程",
-    "intro": "喜欢从事自己感兴趣的事情，要么不做，要做就要做好。未来很长，希望能和β-house的小伙伴慢慢欣赏未来路上的风景。",
-    "imgsrc": "yjm.jpg",
-    "github": "#",
-    "blog": "#"
-}, {
-    "id": "12",
-    "name": "朱崇磊",
-    "classtype": "4",
-    "professional": "计算机科学与技术",
-    "intro": "热爱睡觉，希望每天都有进步",
-    "imgsrc": "zcl.jpg",
-    "github": "#",
-    "blog": "#"
-}, {
-    "id": "13",
+    "id": "42",
     "name": "李祥",
     "classtype": "5",
     "professional": "通信工程",
@@ -116,7 +8,7 @@
     "github": "#",
     "blog": "#"
 }, {
-    "id": "14",
+    "id": "41",
     "name": "洪涵",
     "classtype": "5",
     "professional": "工业设计",
@@ -125,7 +17,7 @@
     "github": "",
     "blog": "#"
 }, {
-    "id": "15",
+    "id": "40",
     "name": "黄徐涛",
     "classtype": "5",
     "professional": "计算机科学与技术",
@@ -134,7 +26,7 @@
     "github": "https://github.com/huangxutao",
     "blog": "http://huangxutao.github.io/"
 }, {
-    "id": "16",
+    "id": "39",
     "name": "任丰烨",
     "classtype": "5",
     "professional": "软件工程",
@@ -143,7 +35,7 @@
     "github": "https://github.com/winnd",
     "blog": "http://winnd.github.io/"
 }, {
-    "id": "17",
+    "id": "38",
     "name": "王鑫泽",
     "classtype": "5",
     "professional": "自动化",
@@ -152,7 +44,7 @@
     "github": "",
     "blog": "http://wangxinze.com"
 }, {
-    "id": "18",
+    "id": "37",
     "name": "徐成超",
     "classtype": "5",
     "professional": "计算机科学与技术",
@@ -161,7 +53,7 @@
     "github": "#",
     "blog": "#"
 }, {
-    "id": "19",
+    "id": "36",
     "name": "周宇涛",
     "classtype": "5",
     "professional": "软件工程",
@@ -170,7 +62,115 @@
     "github": "#",
     "blog": "http://zhouyutao.com"
 }, {
-    "id": "20",
+    "id": "35",
+    "name": "李璐慧",
+    "classtype": "4",
+    "professional": "软件工程",
+    "intro": "做喜欢的事情认真的",
+    "imgsrc": "llh.jpg",
+    "github": "https://github.com/LDingLDing",
+    "blog": "#"
+}, {
+    "id": "34",
+    "name": "黄炳炳",
+    "classtype": "4",
+    "professional": "工商管理",
+    "intro": "我认认真真的反思了一下,我几乎不可能有机会改变世界。去改良我身边的一些事情，才是我应该做的，当然是和工作室的小伙伴一起。",
+    "imgsrc": "hbb.jpg",
+    "github": "https://github.com/ahbing",
+    "blog": "https://ahbing.github.io"
+}, {
+    "id": "33",
+    "name": "黄琳琅",
+    "classtype": "4",
+    "professional": "产品设计",
+    "intro": "简简单单，好好生活，好好爱自己。努力成为想要成为的人",
+    "imgsrc": "hll.jpg",
+    "github": "#",
+    "blog": "#"
+}, {
+    "id": "32",
+    "name": "黄丽雅",
+    "classtype": "4",
+    "professional": "产品设计",
+    "intro": "我想用长得不一样的脑子来讲我对世界的认知任何一种表达任何一种语言都是为了能与你一起玩耍这次我们用代码好不好=皿=",
+    "imgsrc": "hly.jpg",
+    "github": "#",
+    "blog": "#"
+}, {
+    "id": "31",
+    "name": "李育强",
+    "classtype": "4",
+    "professional": "网络工程",
+    "intro": "爱美剧，爱音乐；爱β-house，爱生活。希望成为一个能够游遍全世界的技术宅。",
+    "imgsrc": "lyq.jpg",
+    "github": "#",
+    "blog": "#"
+}, {
+    "id": "30",
+    "name": "泮斌俊",
+    "classtype": "4",
+    "professional": "软件工程",
+    "intro": "对移动端比较感兴趣，喜欢研究各类软件。",
+    "imgsrc": "pbj.jpg",
+    "github": "#",
+    "blog": "#"
+}, {
+    "id": "29",
+    "name": "吴冰清",
+    "classtype": "4",
+    "professional": "产品设计",
+    "intro": "爱旅游，爱摄影，爱美食爱和图片打交道，时刻记录生活喜欢把生活变成影像留存的感觉多去尝试，不怕伤痕也不怕失败，找到自己热爱的方向做喜欢的事，走喜欢的路。",
+    "imgsrc": "wbq.jpg",
+    "github": "#",
+    "blog": "#"
+}, {
+    "id": "28",
+    "name": "王涛",
+    "classtype": "4",
+    "professional": "软件工程",
+    "intro": "习惯有计划的生活，反感浪费时间的事，热爱前端的所有技术，喜欢收集各种前端特效，看其中的代码，希望能学以致用。热爱β-house，希望在这里能让自己变成强者。未来我希望能创办自己的网站（如淘宝，新浪...）",
+    "imgsrc": "wt.jpg",
+    "github": "#",
+    "blog": "#"
+}, {
+    "id": "27",
+    "name": "许骏宇",
+    "classtype": "4",
+    "professional": "通信工程",
+    "intro": "会果断的做自己喜欢的事情，时刻提醒自己 My Dream,My Love,My done.Just For Fun!",
+    "imgsrc": "xjy.jpg",
+    "github": "#",
+    "blog": "#"
+}, {
+    "id": "26",
+    "name": "余刚",
+    "classtype": "4",
+    "professional": "软件工程",
+    "intro": "18岁的我，对任何事都有好奇心，坚信着EvErYthing Will bE Ok ！",
+    "imgsrc": "yg.jpg",
+    "github": "#",
+    "blog": "#"
+}, {
+    "id": "25",
+    "name": "虞俊苗",
+    "classtype": "4",
+    "professional": "通信工程",
+    "intro": "喜欢从事自己感兴趣的事情，要么不做，要做就要做好。未来很长，希望能和β-house的小伙伴慢慢欣赏未来路上的风景。",
+    "imgsrc": "yjm.jpg",
+    "github": "#",
+    "blog": "#"
+}, {
+    "id": "24",
+    "name": "朱崇磊",
+    "classtype": "4",
+    "professional": "计算机科学与技术",
+    "intro": "热爱睡觉，希望每天都有进步",
+    "imgsrc": "zcl.jpg",
+    "github": "#",
+    "blog": "#"
+}, {
+    "id": "23",
     "name": "陈茜",
     "classtype": "3",
     "professional": "工业设计",
@@ -179,7 +179,7 @@
     "github": "#",
     "blog": "#"
 }, {
-    "id": "21",
+    "id": "22",
     "name": "陈显烽",
     "classtype": "3",
     "professional": "电气工程与自动化",
@@ -188,7 +188,7 @@
     "github": "#",
     "blog": "#"
 }, {
-    "id": "22",
+    "id": "21",
     "name": "胡鹏飞",
     "classtype": "3",
     "professional": "软件工程",
@@ -197,7 +197,7 @@
     "github": "#",
     "blog": "http://hupengfei.com"
 }, {
-    "id": "23",
+    "id": "20",
     "name": "李晓菲",
     "classtype": "3",
     "professional": "通信工程",
@@ -206,7 +206,7 @@
     "github": "#",
     "blog": "#"
 }, {
-    "id": "24",
+    "id": "19",
     "name": "李毅",
     "classtype": "3",
     "professional": "通信工程",
@@ -215,7 +215,7 @@
     "github": "#",
     "blog": "http://liyi.it/"
 }, {
-    "id": "25",
+    "id": "18",
     "name": "麻凯倩",
     "classtype": "3",
     "professional": "通信工程",
@@ -224,7 +224,7 @@
     "github": "#",
     "blog": "http://makaiqian.com/"
 }, {
-    "id": "26",
+    "id": "17",
     "name": "项梦霞",
     "classtype": "3",
     "professional": "计算机科学与技术",
@@ -233,7 +233,7 @@
     "github": "#",
     "blog": "#"
 }, {
-    "id": "27",
+    "id": "16",
     "name": "夏之韵",
     "classtype": "3",
     "professional": "信息管理与信息系统",
@@ -242,7 +242,7 @@
     "github": "#",
     "blog": "#"
 }, {
-    "id": "28",
+    "id": "15",
     "name": "杨永鑫",
     "classtype": "3",
     "professional": "计算机",
@@ -251,7 +251,7 @@
     "github": "#",
     "blog": "#"
 }, {
-    "id": "29",
+    "id": "14",
     "name": "郑琳",
     "classtype": "3",
     "professional": "工业设计",
@@ -260,7 +260,7 @@
     "github": "#",
     "blog": "#"
 }, {
-    "id": "30",
+    "id": "13",
     "name": "鲍晓峰",
     "classtype": "2",
     "professional": "机械设计制造及其自动化",
@@ -269,7 +269,7 @@
     "github": "#",
     "blog": "#"
 }, {
-    "id": "31",
+    "id": "12",
     "name": "胡钟钦",
     "classtype": "2",
     "professional": "机械设计制造及其自动化",
@@ -278,7 +278,7 @@
     "github": "#",
     "blog": "#"
 }, {
-    "id": "32",
+    "id": "11",
     "name": "卢静",
     "classtype": "2",
     "professional": "计算机科学与技术",
@@ -287,7 +287,7 @@
     "github": "#",
     "blog": "#"
 }, {
-    "id": "33",
+    "id": "10",
     "name": "孙京",
     "classtype": "2",
     "professional": "电子信息技术及仪器",
@@ -296,7 +296,7 @@
     "github": "#",
     "blog": "#"
 }, {
-    "id": "34",
+    "id": "9",
     "name": "沈逸闻",
     "classtype": "2",
     "professional": "通信工程",
@@ -305,7 +305,7 @@
     "github": "#",
     "blog": "#"
 }, {
-    "id": "35",
+    "id": "8",
     "name": "王妤婷",
     "classtype": "2",
     "professional": "财务管理",
@@ -314,7 +314,7 @@
     "github": "#",
     "blog": "#"
 }, {
-    "id": "36",
+    "id": "7",
     "name": "于川杰",
     "classtype": "2",
     "professional": "计算机",
@@ -323,7 +323,7 @@
     "github": "#",
     "blog": "#"
 }, {
-    "id": "37",
+    "id": "6",
     "name": "周滢",
     "classtype": "2",
     "professional": "财务管理",
@@ -332,7 +332,7 @@
     "github": "#",
     "blog": "#"
 }, {
-    "id": "38",
+    "id": "5",
     "name": "陈昌迪",
     "classtype": "1",
     "professional": "金融学",
@@ -341,7 +341,7 @@
     "github": "#",
     "blog": "#"
 }, {
-    "id": "39",
+    "id": "4",
     "name": "何泽骅",
     "classtype": "1",
     "professional": "电子信息科学与技术",
@@ -350,7 +350,7 @@
     "github": "#",
     "blog": "#"
 }, {
-    "id": "40",
+    "id": "3",
     "name": "孙镔",
     "classtype": "1",
     "professional": "金融",
@@ -359,7 +359,7 @@
     "github": "#",
     "blog": "#"
 }, {
-    "id": "41",
+    "id": "2",
     "name": "陶靖",
     "classtype": "1",
     "professional": "计算机",
@@ -368,7 +368,7 @@
     "github": "#",
     "blog": "#"
 }, {
-    "id": "42",
+    "id": "1",
     "name": "谢嘉俊",
     "classtype": "1",
     "professional": "工业设计",
@@ -377,7 +377,7 @@
     "github": "#",
     "blog": "#"
 }, {
-    "id": "43",
+    "id": "0",
     "name": "朱力",
     "classtype": "1",
     "professional": "通信工程",

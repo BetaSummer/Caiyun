@@ -22,12 +22,15 @@
 
 :local(.indexTitle) {
   @include center();
-  top: -1rem;
-  width: 100%;
-  text-align: center;
-  height: 4rem;
-  line-height: 4rem;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-right: 1rem;
+  border-right: .4rem solid transparent;
+  height: 6rem;
+  line-height: 6rem;
   color: currentColor;
+  animation: typing 3s steps(15),
+            caret .6s steps(1) infinite;
 }
 
 :local(.introBox) {

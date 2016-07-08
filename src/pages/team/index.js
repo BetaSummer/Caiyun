@@ -31,10 +31,11 @@ class Team extends React.Component {
       item: true,
     });
     const {team} = this.props.user;
+    const {length} = team;
     const teamList = team.map((item, index) => {
       return (
         <div key={index} className={classNameForItem}>
-          <Link to={`/user/${item.id - 1}`}>
+          <Link to={`/user/${length - item.id - 1}`}>
             <Image imgSrc={item.imgsrc}/>
             <div className={styles.intro}>
               <h2>{item.name}</h2>
