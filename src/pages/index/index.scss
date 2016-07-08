@@ -3,9 +3,7 @@
 :local(.wrapper) {
   width: 100%;
   min-height: 40rem;
-  section {
-    // margin-bottom: 4rem;
-  }
+
 }
 
 :local(.section1) {
@@ -13,6 +11,7 @@
   left: 0;
   top: 0;
   width: 100%;
+  overflow: hidden;
   /*10rem 6rem 分别是 header 的 height*/
   height: calc(100vh - 10rem);
   @include breakPoint(mobile) {
@@ -22,15 +21,21 @@
 
 :local(.indexTitle) {
   @include center();
-  overflow: hidden;
-  white-space: nowrap;
-  padding-right: 1rem;
+  top: -10rem;
+  width: 100vw;
+  text-align: center;
   border-right: .4rem solid transparent;
   height: 6rem;
   line-height: 6rem;
   color: currentColor;
-  animation: typing 3s steps(15),
-            caret .6s steps(1) infinite;
+  box-sizing: border-box;
+  white-space: wrap;
+  @include breakPoint(tablet) {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(15),
+              caret .6s steps(1) infinite;
+  }
 }
 
 :local(.introBox) {

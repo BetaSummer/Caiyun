@@ -17,8 +17,8 @@
     };
   }
   p {
-    text-indent: 2rem;
-    line-height: 1.2;
+    text-indent: 4rem;
+    line-height: 1.6;
     word-break: break-all;
     text-indent: ($normal + 2);
     @include breakPoint(desktop) {

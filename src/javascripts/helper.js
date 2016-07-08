@@ -37,3 +37,7 @@ export function pageScrollTopAnimate(to, time) {
   const element = document.body;
   animation(element, 'scrollTop', getWindowScrollTop(), to, '', time, true);
 }
+
+export function isMobile() {
+  return /Mobile/gi.test(navigator.userAgent);
+}

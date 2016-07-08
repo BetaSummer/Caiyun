@@ -35,11 +35,6 @@ Open `http://localhost:8080` in your browser.
 ```bash
 $ npm run lint
 ```
-### Test
-
-```bash
-$ npm run test
-```
 
 ### Deploy
 

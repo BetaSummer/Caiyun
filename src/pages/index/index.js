@@ -1,14 +1,14 @@
 import React from 'react';
-
 import Image from '../../components/image/';
-
 import styles from './index.scss';
-
+import {isMobile} from '../../javascripts/helper';
 class Index extends React.Component {
   constructor(props) {
     super(props);
   }
   componentDidMount() {
+    if (isMobile()) return;
+    // 动态字符长度的打字机效果
     const indexTitle = document.querySelector(`.${styles.indexTitle}`);
     const textLen = indexTitle.textContent.length;
     const textStyle = indexTitle.style;
@@ -16,11 +16,10 @@ class Index extends React.Component {
     textStyle.animationTimingFunction = 'steps(' + textLen + '),steps(1)';
   }
   render() {
-    const indexTitle = ['hi~ betahouse, happy birthday!', 'yanshu'];
     return (
       <div className={styles.wrapper}>
         <section className={styles.section1}>
-          <h1 className={styles.indexTitle}>{indexTitle[0]}</h1>
+          <h1 className={styles.indexTitle}>hi~ betahouse, happy birthday!</h1>
         </section>
         <section className={styles.introBox}>
           <a href="http://google.com" className={styles.introItem}>
