@@ -14,7 +14,6 @@ class Footer extends React.Component {
   render() {
     const {tabs} = this.props;
     const nowYear = (new Date()).getFullYear();
-    // click go to top
     const navList = tabs.map((item, index) => {
       const tabName = item.tabName;
       if (item.isLink) {
@@ -41,7 +40,7 @@ class Footer extends React.Component {
             {navList}
           </ul>
           <div>
-            <p>Copyright &copy; 2012-{nowYear} betahouse.us</p>
+            <p>Copyright &copy; 2011-{nowYear} betahouse.us</p>
             <p>Create with <em>♥</em> by <a target="_blank" href="http://weibo.com/u/5622195893/">ahbing</a> • <a target="_blank" href="https://github.com/BetaSummer/Caiyun">彩云</a></p>
           </div>
         </div>
