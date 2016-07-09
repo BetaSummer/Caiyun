@@ -1,4 +1,14 @@
-[{
+[
+{
+    "id": "43",
+    "name": "殷晓明",
+    "classtype": "6",
+    "professional": "计算机",
+    "intro": "在键盘上由死向生",
+    "imgsrc": "#",
+    "github": "https://github.com/Outside-man",
+    "blog": "http://www.4udream.top"
+}, {
     "id": "42",
     "name": "李祥",
     "classtype": "5",
