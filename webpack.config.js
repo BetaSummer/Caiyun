@@ -40,7 +40,7 @@ const prodPlugins = [
 const plugins = basePlugins
   .concat(process.env.NODE_ENV === 'production' ? prodPlugins : [])
   .concat(process.env.NODE_ENV === 'development' ? devPlugins : []);
-
+const devtool = process.env.NODE_ENV === 'production' ? false : 'source-map';
 // css local
 // https://medium.com/seek-ui-engineering/the-end-of-global-css-90d2a4a06284#.c2jl6jmb8
 // and https://github.com/camsong/blog/issues/5
@@ -50,6 +50,7 @@ module.exports = {
   entry: getEntrySources(['./src/index.js']),
   vendor: [
     'react',
+    'react-dom',
   ],
   output: {
     path: path.join(__dirname, 'dist'),
@@ -71,11 +72,11 @@ module.exports = {
       // { test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader?modules&importLoaders=1&localIdentName='+localIdentName) },
       { test: /\.json$/, loader: 'json-loader' },
       { test: /\.jsx?$/, loader: 'babel', include: path.join(__dirname, 'src'), exclude: /node_modules/},
-      { test: /\.(png|jpg|jpeg|gif|svg)$/, loader: 'url-loader?prefix=img/&limit=50000' },
-      { test: /\.(woff|woff2|ttf|eot)$/, loader: 'url-loader?prefix=font/&limit=50000' },
+      { test: /\.(png|jpg|jpeg|gif|svg)$/, loader: 'url-loader?prefix=img/&limit=1000' },
+      { test: /\.(woff|woff2|ttf|eot)$/, loader: 'url-loader?prefix=font/&limit=5000' },
     ],
   },
-  devtool: 'source-map',
+  devtool: devtool,
   plugins: plugins,
   resolve: {
     extensions: ['', '.js', '.json', '.jsx'],

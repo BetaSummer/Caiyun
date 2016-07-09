@@ -1,9 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
-// import some Components
 import Header from '../components/header';
 import Footer from '../components/footer';
-// import some action
 import {selectTab} from '../actions/';
 class App extends React.Component {
   static propTypes = {
@@ -27,7 +25,6 @@ class App extends React.Component {
       dispatch(selectTab(pathname));
     }
   }
-
   render() {
     const {tab} = this.props;
     const {isShowMobileMenu} = this.state;
@@ -42,7 +39,6 @@ class App extends React.Component {
       </div>
     );
   }
-
   toggleMobileMenu() {
     this.setState({
       isShowMobileMenu: !this.state.isShowMobileMenu,
@@ -50,10 +46,8 @@ class App extends React.Component {
   }
 }
 
-function mapStateToProps(state) {
-  return {
-    ...state,
-  };
+function mapStateToProps(storeState) {
+  return storeState;
 }
 
 export default connect(mapStateToProps)(App);
