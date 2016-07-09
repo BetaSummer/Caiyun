@@ -48,10 +48,6 @@ const localIdentName = process.env.NODE_ENV === 'development' ? '[path]___[name]
 
 module.exports = {
   entry: getEntrySources(['./src/index.js']),
-  vendor: [
-    'react',
-    'react-dom',
-  ],
   output: {
     path: path.join(__dirname, 'dist'),
     filename: '[name].[hash].js',
@@ -61,6 +57,12 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: { index: '/' },
+  },
+  externals: {
+    'react': 'React',
+    'react-dom': 'ReactDOM',
+    'react-router': 'ReactRouter',
+    'react-redux': 'ReactRedux'
   },
   module: {
     preLoaders: [
@@ -79,6 +81,10 @@ module.exports = {
   devtool: devtool,
   plugins: plugins,
   resolve: {
-    extensions: ['', '.js', '.json', '.jsx'],
+    extensions: ['', '.js', '.json', '.jsx', 'png', 'jpg', 'jpeg'],
+    alias: {
+        images: path.resolve( __dirname, 'src/assets/images' ),
+        svgs: path.resolve( __dirname, 'src/assets/svgs' ),
+    }
   },
 };
