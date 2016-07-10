@@ -33,7 +33,7 @@ class Footer extends React.Component {
     return (
       <footer className={classNameForFooter}>
         <div className={classNameForLeft}>
-          <img src={require('./../../assets/images/logo.png')}/>
+          <img src={require('images/logo.png')}/>
         </div>
         <div className={classNameForRight}>
           <ul>

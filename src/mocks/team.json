@@ -1,20 +1,38 @@
-[{	"id": "45",
+[{	"id": "47",
     "name": "金飞燕",
     "classtype": "6",
     "professional": "工商管理",
-    "intro": "一个正在减肥的仙女",
+    "intro": "对新奇、富有挑战的事我都勇敢尝试，愿我的能力能匹配得上我喜欢的事。",
     "imgsrc": "jfy.jpg",
     "github": "#",
     "blog": "#"
 }, {
-    "id": "44",
+    "id": "46",
     "name": "沈瑜",
     "classtype": "6",
     "professional": "工商管理",
-    "intro": "没有故事的女同学",
+    "intro": "对很多事有一闪而过的兴趣，是个白日梦想家，希望自己能沉淀下来，把兴趣多付诸实践。学而不思则罔，思而不学则殆。",
     "imgsrc": "sy.jpg",
     "github": "#",
     "blog": "#"
+}, {
+    "id": "45",
+    "name": "卢孔杭",
+    "classtype": "6",
+    "professional": "软件工程",
+    "intro": "喜欢折腾东西，对于自己已经决定了的事情，就一定要坚持做完。",
+    "imgsrc": "lkh.jpg",
+    "github": "https://github.com/Hannith",
+    "blog": "http://www.lukonghang.com"
+}, {
+    "id": "44",
+    "name": "周一鸣",
+    "classtype": "6",
+    "professional": "软件工程",
+    "intro": "活在纠结中努力不让自己后悔。我还是个铲屎官来着。",
+    "imgsrc": "zym.jpg",
+    "github": "https://github.com/ZYDforever",
+    "blog": "http://www.yiniaodanqingjv.com"
 }, {
     "id": "43",
     "name": "唐良栋",
@@ -145,7 +163,7 @@
     "id": "29",
     "name": "吴冰清",
     "classtype": "4",
-    "professional": "产品设计",
+    "professional": "财务管理",
     "intro": "爱旅游，爱摄影，爱美食爱和图片打交道，时刻记录生活喜欢把生活变成影像留存的感觉多去尝试，不怕伤痕也不怕失败，找到自己热爱的方向做喜欢的事，走喜欢的路。",
     "imgsrc": "wbq.jpg",
     "github": "#",

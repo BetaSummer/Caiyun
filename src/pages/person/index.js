@@ -56,4 +56,4 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps)(Person);
+module.exports = connect(mapStateToProps)(Person);

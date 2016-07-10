@@ -4,9 +4,9 @@
   "description": "当时明月在，曾照彩云归。",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf dist/* && cp src/index.html dist/ && cross-env NODE_ENV=production webpack -p --config webpack.config.js",
+    "build": "rm -rf dist/* && cp src/index.html dist/ && cross-env NODE_ENV=production webpack --display-modules --sort-modules-by size -p --config webpack.config.js",
     "dev": "cross-env NODE_ENV=development webpack-dev-server -d --inline --hot --progress --no-info",
-    "lint": "eslint .",
+    "lint": "eslint src",
     "start": "cross-env NODE_ENV=production node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "predeploy": "npm run build && echo \"2016.betahouse.us\" > dist/CNAME ",

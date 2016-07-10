@@ -58,4 +58,5 @@ function mapStateToProps(state) {
   const {user} = state;
   return {user};
 }
-export default connect(mapStateToProps)(Team);
+
+module.exports = connect(mapStateToProps)(Team);

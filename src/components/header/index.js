@@ -41,10 +41,10 @@ class Header extends React.Component {
     return (
       <header className={classNameForHeader}>
         <div className={classNameForLogo}>
-          <Link to="/"><img src={require('./../../assets/images/logo.png')}/></Link>
+          <Link to="/"><img src={require('images/logo.png')}/></Link>
         </div>
         <div className={styles.menuBtn} onTouchEnd={() => { toggleMobileMenu(); }}>
-          <img src={require('./../../assets/svgs/more.svg')} />
+          <img src={require('svgs/more.svg')} />
         </div>
         <nav className={classNameForList}>
           <ul>
