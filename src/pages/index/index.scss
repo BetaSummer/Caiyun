@@ -1,0 +1,112 @@
+@import "../../index.scss";
+
+:local(.wrapper) {
+  width: 100%;
+  min-height: 40rem;
+
+}
+
+:local(.section1) {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  /*10rem 6rem 分别是 header 的 height*/
+  height: calc(100vh - 10rem);
+  @include breakPoint(mobile) {
+    height: calc(100vh - 6rem);
+  };
+}
+
+:local(.indexTitle) {
+  @include center();
+  top: -10rem;
+  width: 100vw;
+  text-align: center;
+  border-right: .4rem solid transparent;
+  height: 6rem;
+  line-height: 6rem;
+  color: currentColor;
+  box-sizing: border-box;
+  white-space: wrap;
+  @include breakPoint(tablet) {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(15),
+              caret .6s steps(1) infinite;
+  }
+}
+
+:local(.introBox) {
+  $height: 42rem;
+  position: relative;
+  width: 100%;
+  height: $height;
+  @include breakPoint(mobile) {
+    height: $height * 2;
+  };
+  overflow: hidden;
+}
+
+:local(.introItem) {
+  position: relative;
+  float: left;
+  width: 47%;
+  height: 100%;
+  margin-left: 2%;
+  overflow: hidden;
+  @include breakPoint(mobile) {
+    width: 96%;
+    height: 50%;
+    margin-top: 2rem;
+  };
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+:local(.intro) {
+  @include center();
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: $light;
+  transition: all .6s ease;
+  background: rgba(0, 0, 0, 0);
+  h1,
+  p {
+    transition: all .6s ease;
+    opacity: 0;
+    text-align: center;
+  }
+  h1 {
+    transform: translate3d(0, -100%, 0);
+  }
+  p {
+    transform: translate3d(0, 2em, 0);
+  }
+  &:hover {
+    h1,
+    p {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+    background: rgba(0, 0, 0, .6);
+  }
+}
+
+:local(.content) {
+  @include center();
+  width: 60%;
+  height: 60%;
+  text-align: center;
+  color: $light;
+  &:hover {
+    border: none;
+  }
+}

@@ -1,0 +1,9 @@
+import keyMirror from 'keyMirror';
+
+export default keyMirror({
+  REQUEST_USER: null,
+  RECEIVE_USER: null,
+  SELECT_USER: null,
+  SELECT_TAB: null,
+  SET_SCROLLTOP: null,
+});

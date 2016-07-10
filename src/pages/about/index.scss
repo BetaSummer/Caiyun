@@ -1,0 +1,28 @@
+@import "../../index.scss";
+
+:local(.about) {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem 2rem 3rem;
+  h1 {
+    text-align: center;
+  }
+  img,
+  p {
+    max-width: 60%;
+    margin-left: 20%;
+    @include breakPoint(mobile) {
+      max-width: 90%;
+      margin-left: 5%;
+    };
+  }
+  p {
+    text-indent: 4rem;
+    line-height: 1.6;
+    word-break: break-all;
+    text-indent: ($normal + 2);
+    @include breakPoint(desktop) {
+      text-indent: ($larger);
+    }
+  }
+}

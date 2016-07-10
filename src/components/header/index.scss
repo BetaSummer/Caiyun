@@ -1,0 +1,92 @@
+@import "../../index.scss";
+
+$headerHeight: 10rem;
+$mHeaderHeight: 6rem;
+:local(.header) {
+  box-sizing: border-box;
+  width: 100%;
+  height: $headerHeight;
+  line-height: $headerHeight;
+  @include breakPoint(mobile) {
+    height: $mHeaderHeight;
+    line-height: $mHeaderHeight;
+  };
+  overflow: hidden;
+}
+:local(.logo) {
+  float: left;
+  height: inherit;
+  padding-left: 8rem;
+  @include breakPoint(mobile) {
+    padding-left: 1rem;
+  }
+  img {
+    height: 3rem;
+    @include breakPoint(mobile) {
+      height: 2rem;
+    }
+  }
+}
+:local(.menuBtn) {
+  display: none;
+  @include breakPoint(mobile) {
+    display: block;
+    width: 2rem;
+    height: inherit;
+    position: absolute;
+    right: 1rem;
+    top: 0;
+    z-index: 23333;
+    line-height: inherit;
+  };
+}
+:local(.nav) {
+  position: relative;
+  float: right;
+  height: inherit;
+  padding-right: 8rem;
+  line-height: inherit;
+  >ul {
+    @include breakPoint(mobile) {
+      position: fixed;
+      top: $mHeaderHeight;
+      left: 0;
+      width: 100vw;
+      transition: all .6s ease;
+      transform: translate3d(0, -200%, 0);
+      opacity: 0;
+    };
+  }
+  li {
+    display: inline-block;
+    padding-right: 3rem;
+    width: auto;
+    @include breakPoint(mobile) {
+      width: 100%;
+      border-bottom: 1px solid #222;
+      box-sizing: border-box;
+      background: #000;
+      padding: 0 0 0 2rem;
+    };
+    a {
+      padding: 6px 0;
+      font-weight: 700;
+      @include breakPoint(mobile) {
+        color: #fff;
+      };
+      &:hover,
+      &:active,
+      &.isCurTab {
+        border-bottom: 2px solid $red;
+      }
+    }
+  }
+}
+:local(.mShow) {
+  >ul {
+    z-index: 233333;
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    transition: all .4s ease;
+  }
+}

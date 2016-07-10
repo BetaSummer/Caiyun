@@ -1,0 +1,94 @@
+@import "../../index.scss";
+
+:local(.team) {
+  width: 100%;
+  >h1,
+  >p {
+    width: 100%;
+    text-align: center;
+  }
+  >p {
+    @include font-size($large);
+    margin-bottom: 6%;
+    @include breakPoint(mobile) {
+      width: 92%;
+      margin-left: 4%;
+      @include font-size($larger);
+    };
+  }
+}
+
+:local(.item) {
+  position: relative;
+  width: calc(96% / 3);
+  margin-left: 1%;
+  height: calc(96vw / 3);
+  float: left;
+  margin-bottom: 1.8rem;
+  >a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+  &:hover .intro {
+    opacity: 1;
+    visibility: visible;
+    transition: all .6s ease;
+    >h2,
+    >p {
+      transform: translate3d(0, 0, 0);
+      transition: all .6s ease;
+    }
+  }
+  @include breakPoint(mobile) {
+    float: none;
+    margin: 1vmin;
+    width: 98vmin;
+    height: 98vmin;
+  }
+  @include breakPoint(desktop) {
+    margin-bottom: 2vmin;
+    width: calc(95% / 4);
+    height: calc(95vw / 4);
+  }
+}
+
+:local(.intro) {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .4);
+  color: $light;
+  text-align: center;
+  line-height: 1;
+  transition: all .6s ease;
+  >h2 {
+    margin-top: 60%;
+    transform: translate3d(0, -100%, 0);
+    @include breakPoint(mobile) {
+      margin-top: 88vmin;
+      margin-bottom: 2vmin;
+      padding-left: 2rem;
+      text-align: left;
+    }
+  }
+  >p {
+    transform: translate3d(0, 100%, 0);
+    @include breakPoint(mobile) {
+      display: none;
+    }
+  }
+  >h2,
+  >p {
+    transition: all .4s ease;
+  }
+  @include breakPoint(mobile) {
+    opacity: 1;
+    background: none;
+    visibility: visible;
+  }
+}

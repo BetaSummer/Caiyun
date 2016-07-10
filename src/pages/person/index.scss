@@ -1,0 +1,50 @@
+@import "../../index.scss";
+
+:local(.person) {
+  position: fixed;
+  padding: 0;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  z-index: 233333333;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  // @include animation to fade in/out
+}
+
+:local(.closeBtn) {
+  width: 4rem;
+  height: 4rem;
+  background: #fff;
+  color: #000;
+  border: 2px solid #000;
+  position: fixed;
+  right: 6rem;
+  top: 2rem;
+  z-index: 23333;
+  display: table;
+  @include breakPoint(mobile) {
+    left: 1vmin;
+    top: 1vmin;
+    width: 98vmin;
+    height: 60vmin;
+    border: none;
+    background-color: transparent;
+    opacity: 0;
+  };
+  &:hover {
+    background: #fff;
+    border-color: $red;
+    @include breakPoint(mobile) {
+      background-color: transparent;
+      opacity: 0;
+    }
+  }
+  a {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    @include font-size($large);
+  }
+}

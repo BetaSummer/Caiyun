@@ -1,0 +1,17 @@
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes typingDelete {
+  from {
+    width: 100%;
+  }
+}
+
+@keyframes caret {
+  50% {
+    border-color: currentColor;
+  }
+}

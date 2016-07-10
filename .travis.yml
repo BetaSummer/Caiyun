@@ -1,0 +1,13 @@
+language: node_js
+
+node_js:
+  - "5"
+
+script:
+  - npm run lint
+
+notifications:
+  email:
+    recipients:
+      - givemearainbowlife@gmail.com
+    on_success: always
