@@ -1,5 +1,5 @@
 [{
-	"id": "44",
+	"id": "46",
 	"name": "邹旭科",
 	"classtype": "6",
 	"professional": "网络工程",
@@ -7,6 +7,24 @@
 	"imgsrc": "zxk.jpg",
 	"github": "https://github.com/BlackZXk",
 	"blog": "http://www.universe0329.top/wordpress/"
+}, {
+    "id": "45",
+    "name": "卢孔杭",
+    "classtype": "6",
+    "professional": "软件工程",
+    "intro": "喜欢折腾东西，对于自己已经决定了的事情，就一定要坚持做完。",
+    "imgsrc": "lkh.jpg",
+    "github": "https://github.com/Hannith",
+    "blog": "http://www.lukonghang.com"
+},{
+    "id": "44",
+    "name": "周一鸣",
+    "classtype": "6",
+    "professional": "软件工程",
+    "intro": "活在纠结中努力不让自己后悔。我还是个铲屎官来着。",
+    "imgsrc": "zym.jpg",
+    "github": "https://github.com/ZYDforever",
+    "blog": "http://www.yiniaodanqingjv.com"
 }, {
     "id": "43",
     "name": "唐良栋",
@@ -137,7 +155,7 @@
     "id": "29",
     "name": "吴冰清",
     "classtype": "4",
-    "professional": "产品设计",
+    "professional": "财务管理",
     "intro": "爱旅游，爱摄影，爱美食爱和图片打交道，时刻记录生活喜欢把生活变成影像留存的感觉多去尝试，不怕伤痕也不怕失败，找到自己热爱的方向做喜欢的事，走喜欢的路。",
     "imgsrc": "wbq.jpg",
     "github": "#",
