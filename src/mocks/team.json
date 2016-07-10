@@ -1,4 +1,21 @@
-[{
+[{	"id": "45",
+    "name": "金飞燕",
+    "classtype": "6",
+    "professional": "工商管理",
+    "intro": "一个正在减肥的仙女",
+    "imgsrc": "jfy.jpg",
+    "github": "#",
+    "blog": "#"
+}, {
+    "id": "44",
+    "name": "沈瑜",
+    "classtype": "6",
+    "professional": "工商管理",
+    "intro": "没有故事的女同学",
+    "imgsrc": "sy.jpg",
+    "github": "#",
+    "blog": "#"
+}, {
     "id": "43",
     "name": "唐良栋",
     "classtype": "6",
