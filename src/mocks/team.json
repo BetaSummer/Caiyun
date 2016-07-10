@@ -1,4 +1,13 @@
 [{
+    "id": "44",
+    "name": "周一鸣",
+    "classtype": "6",
+    "professional": "软件工程",
+    "intro": "活在纠结中努力不让自己后悔。我还是个铲屎官来着。",
+    "imgsrc": "zym.jpg",
+    "github": "https://github.com/ZYDforever",
+    "blog": "http://www.yiniaodanqingjv.com"
+}, {
     "id": "43",
     "name": "唐良栋",
     "classtype": "6",
