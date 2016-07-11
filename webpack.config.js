@@ -49,9 +49,9 @@ const localIdentName = process.env.NODE_ENV === 'development' ? '[path]___[name]
 module.exports = {
   entry: getEntrySources(['./src/index.js']),
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'dist'), // webpack 打包之后的文件输出地址
     filename: '[name].[hash].js',
-    publicPath: '/',
+    publicPath: '/',  // require('./**/**'); 所指代的目录
     sourceMapFilename: '[name].[hash].js.map',
     chunkFilename: '[id].chunk.js',
   },
@@ -83,8 +83,8 @@ module.exports = {
   resolve: {
     extensions: ['', '.js', '.json', '.jsx', 'png', 'jpg', 'jpeg'],
     alias: {
-        images: path.resolve( __dirname, 'src/assets/images' ),
-        svgs: path.resolve( __dirname, 'src/assets/svgs' ),
+      images: path.resolve( __dirname, 'src/assets/images' ),
+      svgs: path.resolve( __dirname, 'src/assets/svgs' ),
     }
   },
 };
