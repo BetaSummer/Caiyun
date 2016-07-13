@@ -1,12 +1,21 @@
 [{
-  "id": "47",
-  "name": "金飞燕",
+  "id": "48",
+  "name": "周诗栋",
   "classtype": "6",
-  "professional": "工商管理",
-  "intro": "对新奇、富有挑战的事我都勇敢尝试，愿我的能力能匹配得上我喜欢的事。",
-  "imgsrc": "jfy.jpg",
-  "github": "#",
-  "blog": "#"
+  "professional": "软件工程",
+  "intro": "一个不宅的程序猴子。Forever young, forever simple.",
+  "imgsrc": "zsd.jpg",
+  "github": "https://github.com/clarkzsd",
+  "blog": "http://www.zhoushidong.cc"
+}, {
+  	"id": "47",
+  	"name": "金飞燕",
+  	"classtype": "6",
+  	"professional": "工商管理",
+  	"intro": "对新奇、富有挑战的事我都勇敢尝试，愿我的能力能匹配得上我喜欢的事。",
+  	"imgsrc": "jfy.jpg",
+  	"github": "#",
+  	"blog": "#"
 }, {
     "id": "46",
     "name": "沈瑜",
