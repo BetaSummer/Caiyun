@@ -9,7 +9,7 @@
     "lint": "eslint src",
     "start": "cross-env NODE_ENV=production node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "predeploy": "npm run build && echo \"2016.betahouse.us\" > dist/CNAME ",
+    "predeploy": "npm run build && echo \"www.betahouse.us\" > dist/CNAME ",
     "deploy": "gh-pages -d dist"
   },
   "keywords": [
