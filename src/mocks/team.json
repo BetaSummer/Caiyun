@@ -1,4 +1,22 @@
 [{
+  "id": "50",
+  "name": "凌怡瑶",
+  "classtype": "6",
+  "professional": "软件工程",
+  "intro": "一个努力学习，立志成为优秀码农的人！",
+  "imgsrc": "lly.jpg",
+  "github": "#",
+  "blog": "#"
+}, {
+  "id": "49",
+  "name": "何熠",
+  "classtype": "6",
+  "professional": "软件工程",
+  "intro": "I am not the best,but I try my best .",
+  "imgsrc": "hy.jpg",
+  "github": "https://github.com/RobinNX",
+  "blog": "#"
+}, {
   "id": "48",
   "name": "周诗栋",
   "classtype": "6",
